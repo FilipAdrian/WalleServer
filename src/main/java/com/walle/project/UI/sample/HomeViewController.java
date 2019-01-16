@@ -116,7 +116,7 @@ public class HomeViewController implements Initializable {
                     productViewController.flag = 1;
                 } catch (Exception e) {
                     System.out.println (e.getMessage ( ));
-                }
+e.printStackTrace ();                }
             } else pnlProducts = productViewController.pnStaff;
             pnlProducts.toFront ( );
         }

@@ -29,9 +29,8 @@ import java.util.ResourceBundle;
 import java.util.function.Predicate;
 
 public class ProductViewController implements Initializable {
-
     @FXML
-    public static TableView <ProductTable> tableID;
+    public TableView <ProductTable>tableID;
     @FXML
     private TableColumn <Object, String> iID;
     @FXML
@@ -54,7 +53,7 @@ public class ProductViewController implements Initializable {
     private Button addButton;
 
     public Integer flag = 0;
-    private ProductAddViewController productAddViewController = new ProductAddViewController ();
+    private ProductAddViewController productAddViewController = new ProductAddViewController ( );
     private Long user = LoginViewController.roleUser;
     @Autowired
     private com.walle.project.controller.ProductController productController;
@@ -92,7 +91,7 @@ public class ProductViewController implements Initializable {
         System.out.println (user);
         data = insertData ( );
         tableID.setItems (data);
-        tableID.refresh ( );
+        user = 0l;
         if (user != 91001) {
             deleteButton.setOpacity (1);
             addButton.setOpacity (1);
@@ -180,12 +179,11 @@ public class ProductViewController implements Initializable {
     }
 
     public void addButton(ActionEvent actionEvent) {
-        try{
+        try {
             productAddViewController.startStage ( );
-        }
-        catch (Exception e){
-            e.getMessage ();
-            e.getLocalizedMessage ();
+        } catch (Exception e) {
+            e.getMessage ( );
+            e.getLocalizedMessage ( );
         }
 
     }

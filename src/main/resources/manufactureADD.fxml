@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="532.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.ManufactureAddViewController">
+    <children>
+        <BorderPane layoutX="69.0" layoutY="14.0" prefHeight="622.0" prefWidth="798.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="76.0" prefWidth="301.0" text="Manufacture" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Bodoni MT Bold" size="44.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="473.0" prefWidth="497.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="58.0" text="Name">
+                     <font>
+                        <Font name="Bell MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <Label prefHeight="42.0" prefWidth="70.0" text="Country">
+                     <font>
+                        <Font name="Bell MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <Label prefHeight="42.0" prefWidth="67.0" text="Address">
+                     <font>
+                        <Font name="Bell MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets top="40.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <bottom>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="64.0" prefWidth="60.0" style="-fx-background-color: #d2eff9;" textFill="#06ee0d" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Button>
+         </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>
