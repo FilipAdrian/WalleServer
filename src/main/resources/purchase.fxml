@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1056.0" style="-fx-background-color: #FFC0CB;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.PurchaseViewController">
+    <children>
+        <StackPane layoutX="5.0" layoutY="-7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1056.0" style="-fx-background-color:#d2eff9;" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="30.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </StackPane>
+        <BorderPane prefHeight="242.0" prefWidth="994.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="200.0">
+            <center>
+                <TableView fx:id="tableID" editable="true" fixedCellSize="25.0" prefHeight="242.0" prefWidth="835.0" snapToPixel="false" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="iID" prefWidth="186.0" text="Nr." />
+                        <TableColumn fx:id="iData" prefWidth="218.0" text="Data" />
+                        <TableColumn fx:id="iProduct" prefWidth="218.0" text="Product" />
+                        <TableColumn fx:id="iCost" prefWidth="80.0" text="Cost" />
+                        <TableColumn fx:id="iQuantity" prefWidth="50.0" text="Quantity" />
+                        <TableColumn fx:id="iAmount" prefWidth="80.0" text="Amount" />
+                        <TableColumn fx:id="iClient" prefWidth="80.0" text="Client" />
+                        <TableColumn fx:id="iUser" prefWidth="218.0" text="User" />
+                    </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+                </TableView>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
