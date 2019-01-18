@@ -86,6 +86,18 @@
                         <Image url="@images/search.png" />
                      </image>
                   </ImageView>
+                  <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#accessRefresh" prefHeight="72.0" translateX="148.0">
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" scaleX="1.25" scaleY="1.25" translateX="2.0">
+                           <image>
+                              <Image url="@images/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
                </children>
             </GridPane>
          </top>

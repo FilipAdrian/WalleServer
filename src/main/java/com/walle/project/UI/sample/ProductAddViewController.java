@@ -80,7 +80,7 @@ public class ProductAddViewController implements Initializable {
         Integer qt = Integer.parseInt (quantity.getText ( ));
         Double pr = Double.parseDouble (price.getText ( ));
         Product newProduct = new Product (id.getText ( ), name.getText ( ), qt, pr, mt, wh);
-        ProductTable productTable = new ProductTable (newProduct.getId ( ), newProduct.getName ( ), newProduct.getQuantiy ( ), newProduct.getPrice ( ).doubleValue ( ), newProduct.getManufacture ( ).getName ( ), newProduct.getWarehouse ( ).getName ( ));
+        ProductTable productTable = new ProductTable (newProduct.getId ( ), newProduct.getName ( ), newProduct.getQuantiy ( ).toString (), newProduct.getPrice ( ).toString (), newProduct.getManufacture ( ).getName ( ), newProduct.getWarehouse ( ).getName ( ));
         Integer status = productController.addOrUpdate (newProduct);
 
     }

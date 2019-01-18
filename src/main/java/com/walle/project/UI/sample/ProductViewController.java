@@ -2,47 +2,57 @@ package com.walle.project.UI.sample;
 
 
 import com.walle.project.UI.model.ProductTable;
+import com.walle.project.controller.ManufactureController;
+import com.walle.project.entity.Manufacture;
 import com.walle.project.entity.Product;
+import javafx.beans.property.ReadOnlyObjectWrapper;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.ComboBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.util.Callback;
+import javafx.util.converter.DefaultStringConverter;
+import org.controlsfx.control.textfield.TextFields;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.function.Predicate;
 
 public class ProductViewController implements Initializable {
     @FXML
-    public TableView <ProductTable>tableID;
+    public TableView <ProductTable> tableID;
     @FXML
     private TableColumn <Object, String> iID;
     @FXML
     private TableColumn <Object, String> iName;
     @FXML
-    private TableColumn <Object, Object> iQuantity;
+    private TableColumn <Object, String> iQuantity;
     @FXML
-    private TableColumn <Object, Object> iPrice;
+    private TableColumn <Object, String> iPrice;
     @FXML
-    private TableColumn <Object, Object> iManufacture;
+    private TableColumn <Object, String> iManufacture;
     @FXML
-    private TableColumn <Object, Object> iWarehouse;
+    private TableColumn <Object, String> iWarehouse;
     @FXML
     public Pane pnStaff;
     @FXML
@@ -59,13 +69,16 @@ public class ProductViewController implements Initializable {
     private com.walle.project.controller.ProductController productController;
     private List <Product> products;
     private ObservableList <ProductTable> data;
+    private ManufactureController manufactureController = new ManufactureController ( );
+    private List <Manufacture> manufactureList = manufactureController.fetchList ( );
+    private ObservableList <String> manufactures;
 
     private ObservableList <ProductTable> insertData() {
         ObservableList <ProductTable> data = FXCollections.observableArrayList ( );
 
         for (int i = 0; i < products.size ( ); i++) {
 
-            data.add (new ProductTable (products.get (i).getId ( ), products.get (i).getName ( ), products.get (i).getQuantiy ( ), products.get (i).getPrice ( ).doubleValue ( ),
+            data.add (new ProductTable (products.get (i).getId ( ), products.get (i).getName ( ), products.get (i).getQuantiy ( ).toString (), products.get (i).getPrice ( ).toString (),
                     products.get (i).getManufacture ( ).getName ( ), products.get (i).getWarehouse ( ).getName ( )));
         }
         return data;
@@ -91,20 +104,27 @@ public class ProductViewController implements Initializable {
         System.out.println (user);
         data = insertData ( );
         tableID.setItems (data);
-        user = 0l;
         if (user != 91001) {
+            manufactures = FXCollections.observableArrayList ( );
             deleteButton.setOpacity (1);
             addButton.setOpacity (1);
             deleteButton.setDisable (false);
             addButton.setDisable (false);
             iName.setCellFactory (TextFieldTableCell.forTableColumn ( ));
-
-        }
-
+            iQuantity.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+            iPrice.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+            iWarehouse.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+            for (int i = 0; i < manufactureList.size ( ); i++) {
+                manufactures.add (manufactureList.get (i).getName ( ));
+            }
+            iManufacture.setCellFactory (ComboBoxTableCell.forTableColumn ( new DefaultStringConverter (),manufactures));
+iManufacture.setOnEditCommit (new EventHandler <TableColumn.CellEditEvent <Object, String>> ( ) {
+    @Override
+    public void handle(TableColumn.CellEditEvent <Object, String> event) {
+        System.out.println (event.getNewValue () );
     }
-
-    public void addToTable(ProductTable productTable) {
-        tableID.getItems ( ).add (productTable);
+});
+        }
 
     }
 
@@ -146,27 +166,7 @@ public class ProductViewController implements Initializable {
         if (user == 91002 || user == 51003) {
             String id = tableID.getSelectionModel ( ).getSelectedItem ( ).getrID ( );
             Integer status = productController.deleteProduct (id);
-            if (status == 500) {
-                Alert alert = new Alert (Alert.AlertType.WARNING);
-                alert.setTitle ("Warning");
-                alert.setContentText ("This product can be deleted !" +
-                        "\nPlease check if it does not appear somewhere.");
-                alert.setHeaderText (null);
-                alert.showAndWait ( );
-            } else if (status == 200) {
-                Alert alert = new Alert (Alert.AlertType.CONFIRMATION);
-                alert.setTitle ("Confirmation");
-                alert.setContentText ("This product has been deleted successfully");
-                alert.setHeaderText (null);
-                alert.showAndWait ( );
-                ObservableList <ProductTable> allProduct, SingleProduct;
-                allProduct = tableID.getItems ( );
-                SingleProduct = tableID.getSelectionModel ( ).getSelectedItems ( );
-                SingleProduct.forEach (allProduct::remove);
-                tableID.refresh ( );
-
-            }
-            tableID.refresh ( );
+            AlertViewController.delete (status, tableID, "product");
         }
 
     }

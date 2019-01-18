@@ -25,9 +25,9 @@
                <columns>
                   <TableColumn fx:id="iID"  prefWidth="186.0" text="Nr." />
                   <TableColumn fx:id="iName" prefWidth="218.0" text="Name" />
-                  <TableColumn fx:id="iQuantity" onEditCommit="#onSelect" prefWidth="70.0" text="Quantity" />
+                  <TableColumn fx:id="iQuantity" onEditCommit="#onSelect"  prefWidth="70.0" text="Quantity" />
                   <TableColumn fx:id="iPrice" onEditCommit="#onSelect" prefWidth="50.0" text="Price" />
-                  <TableColumn fx:id="iManufacture" onEditCommit="#onSelect" prefWidth="118.0" text="Manufacture" />
+                  <TableColumn fx:id="iManufacture"  prefWidth="118.0" text="Manufacture" />
                   <TableColumn fx:id="iWarehouse" onEditCommit="#onSelect" prefWidth="83.0" text="Warehouse" />
                </columns>
                <BorderPane.margin>

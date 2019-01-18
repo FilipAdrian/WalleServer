@@ -12,10 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.KeyEvent;
@@ -31,7 +28,8 @@ import java.util.ResourceBundle;
 import java.util.function.Predicate;
 
 public class ManufactureViewController implements Initializable {
-
+    @FXML
+    public Button refreshButton;
     @FXML
     TableView <ManufactureTable> tableID;
     @FXML
@@ -54,6 +52,7 @@ public class ManufactureViewController implements Initializable {
     private List <Manufacture> manufacture;
     private ObservableList <ManufactureTable> data;
     private ManufactureAddViewController manufactureAddViewController = new ManufactureAddViewController ( );
+    private Long user = LoginViewController.roleUser;
 
     private ObservableList <ManufactureTable> insertData() {
         ObservableList <ManufactureTable> data = FXCollections.observableArrayList ( );
@@ -79,8 +78,24 @@ public class ManufactureViewController implements Initializable {
 
         data = insertData ( );
         tableID.setItems (data);
-        iName.setCellFactory (TextFieldTableCell.forTableColumn ( ));
-        iAddress.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        deleteButton.setOpacity (0);
+        addButton.setOpacity (0);
+        refreshButton.setOpacity (0);
+        deleteButton.setDisable (true);
+        addButton.setDisable (true);
+        refreshButton.setDisable (true);
+
+        if (user != 91001) {
+            deleteButton.setOpacity (1);
+            addButton.setOpacity (1);
+            refreshButton.setOpacity (1);
+            deleteButton.setDisable (false);
+            addButton.setDisable (false);
+            refreshButton.setDisable (false);
+            iName.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+            iAddress.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+
+        }
     }
 
     public Pane loadManufacture(AnchorPane home, Pane pnlManufacture) throws IOException {
@@ -112,18 +127,23 @@ public class ManufactureViewController implements Initializable {
 
 
     public void accessdelete(ActionEvent actionEvent) {
+        if (user == 91002 || user == 91003) {
+            Long id = tableID.getSelectionModel ( ).getSelectedItem ( ).getrID ( );
+            Integer status = manufactureController.deleteManufacture (id);
+            AlertViewController.delete (status, tableID,"manufacture");
+        }
     }
 
     public void addButton(ActionEvent actionEvent) throws IOException {
-        System.out.println ("Access" );
-        try{
+        System.out.println ("Access");
+        try {
             manufactureAddViewController.startStage ( );
-        }
-        catch (Exception e){
-            e.printStackTrace ();
+        } catch (Exception e) {
+            e.printStackTrace ( );
         }
 
     }
+
 
     public void searchProduct(KeyEvent keyEvent) {
         FilteredList <ManufactureTable> filteredList = new FilteredList <> (data, e -> true);
@@ -145,5 +165,19 @@ public class ManufactureViewController implements Initializable {
         SortedList <ManufactureTable> sortedList = new SortedList <> (filteredList);
         sortedList.comparatorProperty ( ).bind (tableID.comparatorProperty ( ));
         tableID.setItems (sortedList);
+    }
+
+    public void accessRefresh(ActionEvent actionEvent) {
+        tableID.getItems ( ).clear ( );
+        data.clear ( );
+        manufactureController = new ManufactureController ( );
+        try {
+            manufacture = manufactureController.fetchList ( );
+        } catch (Exception e) {
+            System.out.println (e.getMessage ( ));
+        }
+        data = insertData ( );
+        tableID.setItems (data);
+
     }
 }

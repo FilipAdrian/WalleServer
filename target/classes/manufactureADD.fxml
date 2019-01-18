@@ -29,19 +29,19 @@
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField alignment="CENTER_RIGHT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="name" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
                   <Label prefHeight="42.0" prefWidth="70.0" text="Country">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="country" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
                   <Label prefHeight="42.0" prefWidth="67.0" text="Address">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="address" alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
                </children>
                <BorderPane.margin>
                   <Insets top="40.0" />
@@ -49,7 +49,7 @@
             </VBox>
          </center>
          <bottom>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="64.0" prefWidth="60.0" style="-fx-background-color: #d2eff9;" textFill="#06ee0d" BorderPane.alignment="CENTER">
+            <Button fx:id="saveButton"  onAction="#onClick" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="64.0" prefWidth="60.0" style="-fx-background-color: #d2eff9;" textFill="#06ee0d" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets />
                </BorderPane.margin>

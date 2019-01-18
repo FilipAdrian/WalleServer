@@ -17,7 +17,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
+
+import static org.apache.http.protocol.HTTP.USER_AGENT;
 
 @RestController
 public class CountryController implements UrlReader {
@@ -44,28 +52,58 @@ public class CountryController implements UrlReader {
 
     }
 
-    @PostMapping(value = "/country",consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
-            produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @PostMapping("/country")
     private ResponseEntity <?> save(@RequestBody Country country) {
         countryServices.saveOrUpdate (country);
         return ResponseEntity.ok ( ).body ("Country  " + country.getName ( ) + "has been added");
     }
 
     public void addOrUpdate(Country country){
-        HttpHeaders headers = new HttpHeaders ();
-        headers.add("Accept", MediaType.APPLICATION_JSON_VALUE);
         try {
+            URL obj = new URL("http://localhost:8080/country");
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+            con.setRequestMethod("POST");
+            con.setRequestProperty("Content-Type", "application/json");
+            con.setRequestProperty("Accept", "application/json");
+            con.setRequestProperty("User-Agent", USER_AGENT);
 
-            RestTemplate restTemplate = new RestTemplate();
-            ResponseEntity<Country> result
-                    = restTemplate.postForEntity("http://localhost:8080/country",country, Country.class);
-            System.out.println ("code of result is"+ result.getStatusCode () );
+            // For POST only - START
+            con.setDoOutput(true);
+            OutputStream os = con.getOutputStream();
+            Gson gson = new Gson ();
+            os.write(gson.toJson (country).getBytes ());
+            os.flush();
+            os.close();
+            // For POST only - END
+
+            int responseCode = con.getResponseCode();
+            System.out.println (    con.getContent ().getClass ().getName ());
+            System.out.println("POST Response Code :: " + responseCode);
+
+            if (responseCode == HttpURLConnection.HTTP_OK) { //success
+                BufferedReader in = new BufferedReader(new InputStreamReader (
+                        con.getInputStream()));
+                String inputLine;
+                StringBuffer response = new StringBuffer();
+
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+
+                // print result
+                System.out.println(response.toString());
+            } else {
+                System.out.println("POST request not worked");
+            }
+
         }
-        catch (Exception e){
+        catch (IOException e){
             e.getMessage ();
-            e.getLocalizedMessage ();
+            e.printStackTrace ();
         }
     }
+
 
     public void deleteCountry(Long id){
         try{
