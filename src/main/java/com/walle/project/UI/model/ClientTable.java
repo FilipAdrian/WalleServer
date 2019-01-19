@@ -100,4 +100,8 @@ public class ClientTable {
     public SimpleStringProperty rTypeProperty() {
         return rType;
     }
+
+    public void setrClient(String rClient) {
+        this.rClient.set (rClient);
+    }
 }

@@ -42,7 +42,7 @@ public class ManufactureAddViewController implements Initializable {
         Parent root = FXMLLoader.load (getClass ( ).getClassLoader ( ).getResource ("manufactureADD.fxml"));
         Stage stage = new Stage ( );
         stage.setTitle ("Add Manufacture");
-        stage.setScene (new Scene (root, 450, 487));
+        stage.setScene (new Scene (root, 500, 487));
         stage.show ( );
         stage.setResizable (false);
         return stage;

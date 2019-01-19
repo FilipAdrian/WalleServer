@@ -27,7 +27,7 @@ import java.util.List;
 import static org.apache.http.protocol.HTTP.USER_AGENT;
 
 @RestController
-public class ManufactureController implements UrlReader {
+public class ManufactureController implements UrlReader,RequestResponse {
     @Autowired
     private ManufactureServices manufactureServices;
 
@@ -46,7 +46,6 @@ public class ManufactureController implements UrlReader {
     @PostMapping("/manufacture")
     private ResponseEntity <?> save(@RequestBody Manufacture manufacture) {
         manufactureServices.saveOrUpdate (manufacture);
-//        return ResponseEntity.ok ( ).body ("Manufacture  " + manufacture.getName ( ) + " has been added");
         return new ResponseEntity <> (manufacture, HttpStatus.OK);
     }
 
@@ -98,27 +97,7 @@ public class ManufactureController implements UrlReader {
             os.flush();
             os.close();
             // For POST only - END
-
-            responseCode = con.getResponseCode();
-            System.out.println (    con.getResponseMessage () );
-            System.out.println("POST Response Code :: " + responseCode);
-
-            if (responseCode == HttpURLConnection.HTTP_OK) { //success
-                BufferedReader in = new BufferedReader(new InputStreamReader (
-                        con.getInputStream()));
-                String inputLine;
-                StringBuffer response = new StringBuffer();
-
-                while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
-                }
-                in.close();
-                JSONObject myResponse = new JSONObject (response.toString ());
-                System.out.println ("Id -ul :"+myResponse.getInt ("id"));
-                // print result
-            } else {
-                System.out.println("POST request not worked");
-            }
+            responseCode = checkResponse (con);
 
         }
         catch (IOException e){

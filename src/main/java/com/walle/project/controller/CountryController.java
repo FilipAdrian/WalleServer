@@ -28,7 +28,7 @@ import java.util.List;
 import static org.apache.http.protocol.HTTP.USER_AGENT;
 
 @RestController
-public class CountryController implements UrlReader {
+public class CountryController implements UrlReader,RequestResponse {
     @Autowired
     private CountryServices countryServices;
 
@@ -58,7 +58,8 @@ public class CountryController implements UrlReader {
         return ResponseEntity.ok ( ).body ("Country  " + country.getName ( ) + "has been added");
     }
 
-    public void addOrUpdate(Country country){
+    public Integer addOrUpdate(Country country){
+        Integer responseCode = null;
         try {
             URL obj = new URL("http://localhost:8080/country");
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -76,32 +77,14 @@ public class CountryController implements UrlReader {
             os.close();
             // For POST only - END
 
-            int responseCode = con.getResponseCode();
-            System.out.println (    con.getContent ().getClass ().getName ());
-            System.out.println("POST Response Code :: " + responseCode);
-
-            if (responseCode == HttpURLConnection.HTTP_OK) { //success
-                BufferedReader in = new BufferedReader(new InputStreamReader (
-                        con.getInputStream()));
-                String inputLine;
-                StringBuffer response = new StringBuffer();
-
-                while ((inputLine = in.readLine()) != null) {
-                    response.append(inputLine);
-                }
-                in.close();
-
-                // print result
-                System.out.println(response.toString());
-            } else {
-                System.out.println("POST request not worked");
-            }
+            responseCode = checkResponse (con);
 
         }
         catch (IOException e){
             e.getMessage ();
             e.printStackTrace ();
         }
+        return  responseCode;
     }
 
 

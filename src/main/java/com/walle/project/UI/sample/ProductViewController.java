@@ -3,8 +3,11 @@ package com.walle.project.UI.sample;
 
 import com.walle.project.UI.model.ProductTable;
 import com.walle.project.controller.ManufactureController;
+import com.walle.project.controller.ProductController;
+import com.walle.project.controller.WarehouseController;
 import com.walle.project.entity.Manufacture;
 import com.walle.project.entity.Product;
+import com.walle.project.entity.Warehouse;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -38,9 +41,11 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.function.Predicate;
 
-public class ProductViewController implements Initializable {
+public class ProductViewController implements Initializable, ShowButtonsController {
     @FXML
     public TableView <ProductTable> tableID;
+    @FXML
+    public Button refreshButton;
     @FXML
     private TableColumn <Object, String> iID;
     @FXML
@@ -54,15 +59,12 @@ public class ProductViewController implements Initializable {
     @FXML
     private TableColumn <Object, String> iWarehouse;
     @FXML
-    public Pane pnStaff;
-    @FXML
     private TextField search;
     @FXML
     private Button deleteButton;
     @FXML
     private Button addButton;
 
-    public Integer flag = 0;
     private ProductAddViewController productAddViewController = new ProductAddViewController ( );
     private Long user = LoginViewController.roleUser;
     @Autowired
@@ -70,15 +72,18 @@ public class ProductViewController implements Initializable {
     private List <Product> products;
     private ObservableList <ProductTable> data;
     private ManufactureController manufactureController = new ManufactureController ( );
+    private WarehouseController warehouseController = new WarehouseController ( );
     private List <Manufacture> manufactureList = manufactureController.fetchList ( );
+    private List <Warehouse> warehouseList = warehouseController.fetchList ( );
     private ObservableList <String> manufactures;
+    private ObservableList <String> warehouses;
 
     private ObservableList <ProductTable> insertData() {
         ObservableList <ProductTable> data = FXCollections.observableArrayList ( );
 
         for (int i = 0; i < products.size ( ); i++) {
 
-            data.add (new ProductTable (products.get (i).getId ( ), products.get (i).getName ( ), products.get (i).getQuantiy ( ).toString (), products.get (i).getPrice ( ).toString (),
+            data.add (new ProductTable (products.get (i).getId ( ), products.get (i).getName ( ), products.get (i).getQuantiy ( ).toString ( ), products.get (i).getPrice ( ).toString ( ),
                     products.get (i).getManufacture ( ).getName ( ), products.get (i).getWarehouse ( ).getName ( )));
         }
         return data;
@@ -91,10 +96,7 @@ public class ProductViewController implements Initializable {
         iPrice.setCellValueFactory (new PropertyValueFactory <> ("rPrice"));
         iManufacture.setCellValueFactory (new PropertyValueFactory <> ("rManufacture"));
         iWarehouse.setCellValueFactory (new PropertyValueFactory <> ("rWarehouse"));
-        deleteButton.setOpacity (0);
-        addButton.setOpacity (0);
-        deleteButton.setDisable (true);
-        addButton.setDisable (true);
+
         productController = new com.walle.project.controller.ProductController ( );
         try {
             products = productController.fetchList ( );
@@ -104,26 +106,11 @@ public class ProductViewController implements Initializable {
         System.out.println (user);
         data = insertData ( );
         tableID.setItems (data);
+        showButton (deleteButton, addButton, refreshButton, user);
         if (user != 91001) {
             manufactures = FXCollections.observableArrayList ( );
-            deleteButton.setOpacity (1);
-            addButton.setOpacity (1);
-            deleteButton.setDisable (false);
-            addButton.setDisable (false);
-            iName.setCellFactory (TextFieldTableCell.forTableColumn ( ));
-            iQuantity.setCellFactory (TextFieldTableCell.forTableColumn ( ));
-            iPrice.setCellFactory (TextFieldTableCell.forTableColumn ( ));
-            iWarehouse.setCellFactory (TextFieldTableCell.forTableColumn ( ));
-            for (int i = 0; i < manufactureList.size ( ); i++) {
-                manufactures.add (manufactureList.get (i).getName ( ));
-            }
-            iManufacture.setCellFactory (ComboBoxTableCell.forTableColumn ( new DefaultStringConverter (),manufactures));
-iManufacture.setOnEditCommit (new EventHandler <TableColumn.CellEditEvent <Object, String>> ( ) {
-    @Override
-    public void handle(TableColumn.CellEditEvent <Object, String> event) {
-        System.out.println (event.getNewValue () );
-    }
-});
+            warehouses = FXCollections.observableArrayList ( );
+            editRow ( );
         }
 
     }
@@ -163,19 +150,36 @@ iManufacture.setOnEditCommit (new EventHandler <TableColumn.CellEditEvent <Objec
     }
 
     public void accessdelete(ActionEvent actionEvent) {
-        if (user == 91002 || user == 51003) {
-            String id = tableID.getSelectionModel ( ).getSelectedItem ( ).getrID ( );
-            Integer status = productController.deleteProduct (id);
-            AlertViewController.delete (status, tableID, "product");
-        }
+        String id = tableID.getSelectionModel ( ).getSelectedItem ( ).getrID ( );
+        Integer status = productController.deleteProduct (id);
+        AlertViewController.delete (status, tableID, "product");
 
     }
 
-    public void onSelect(TableColumn.CellEditEvent <Object, Object> objectObjectCellEditEvent) {
-
-        ProductTable client = tableID.getSelectionModel ( ).getSelectedItem ( );
-        System.out.println (client.getrID ( ));
-
+    private void editRow() {
+        for (int i = 0; i < manufactureList.size ( ); i++) {
+            manufactures.add (manufactureList.get (i).getName ( ));
+        }
+        for (int i = 0; i < warehouseList.size ( ); i++) {
+            warehouses.add (warehouseList.get (i).getName ( ));
+        }
+        iName.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        iQuantity.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        iPrice.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        iManufacture.setCellFactory (ComboBoxTableCell.forTableColumn (new DefaultStringConverter ( ), manufactures));
+        iWarehouse.setCellFactory (ComboBoxTableCell.forTableColumn (new DefaultStringConverter ( ), warehouses));
+        iManufacture.setOnEditCommit (event -> {
+            ProductTable productTable = tableID.getSelectionModel ( ).getSelectedItem ( );
+            productTable.setrManufacture (event.getNewValue ( ));
+            productController.addOrUpdate (Mapper.transIntoProductObject (productTable));
+            tableID.refresh ( );
+        });
+        iWarehouse.setOnEditCommit (event -> {
+            ProductTable productTable = tableID.getSelectionModel ( ).getSelectedItem ( );
+            productTable.setrWarehouse (event.getNewValue ( ));
+            productController.addOrUpdate (Mapper.transIntoProductObject (productTable));
+            tableID.refresh ( );
+        });
     }
 
     public void addButton(ActionEvent actionEvent) {
@@ -187,5 +191,36 @@ iManufacture.setOnEditCommit (new EventHandler <TableColumn.CellEditEvent <Objec
         }
 
     }
+
+    public void accessRefresh(ActionEvent actionEvent) {
+        tableID.getItems ( ).clear ( );
+        data.clear ( );
+        productController = new ProductController ( );
+        try {
+            products = productController.fetchList ( );
+        } catch (Exception e) {
+            System.out.println (e.getMessage ( ));
+        }
+        data = insertData ( );
+        tableID.setItems (data);
+
+    }
+
+    public void editColumn(TableColumn.CellEditEvent <Object, String> objectStringCellEditEvent) {
+        if (user != 91001) {
+            ProductTable productTable = tableID.getSelectionModel ( ).getSelectedItem ( );
+            String columnName = objectStringCellEditEvent.getTableColumn ( ).getId ( );
+            if (columnName.equals ("iName")) {
+                productTable.setrWarehouse (objectStringCellEditEvent.getNewValue ( ));
+            } else if (columnName.equals ("iQuantity")) {
+                productTable.setrQuantity (objectStringCellEditEvent.getNewValue ( ));
+            } else if (columnName.equals ("iPrice")) {
+                productTable.setrPrice (objectStringCellEditEvent.getNewValue ( ));
+            }
+            productController.addOrUpdate (Mapper.transIntoProductObject (productTable));
+            tableID.refresh ( );
+        }
+    }
+
 }
 

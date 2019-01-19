@@ -65,8 +65,8 @@ public class Product {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setPrice(Double price) {
+        this.price = new BigDecimal (price);
     }
 
     public Manufacture getManufacture() {

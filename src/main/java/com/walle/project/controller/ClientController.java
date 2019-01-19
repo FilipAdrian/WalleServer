@@ -9,6 +9,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.impl.client.HttpClients;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -17,10 +18,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
+import static org.apache.http.protocol.HTTP.USER_AGENT;
+
 @RestController
-public class ClientController implements UrlReader {
+public class ClientController implements UrlReader, RequestResponse {
     @Autowired
     private ClientServices clientServices;
 
@@ -36,12 +45,10 @@ public class ClientController implements UrlReader {
         return new ResponseEntity <> (client, HttpStatus.OK);
     }
 
-    @PostMapping(value = "/clients", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
-            produces = {MediaType.APPLICATION_ATOM_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @PostMapping("/clients")
     private ResponseEntity <?> save(@RequestBody Client client) {
         clientServices.saveOrUpdate (client);
-        return ResponseEntity.ok ( ).body ("Client  " + client.getName ( ) + " has been added");
-    }
+        return new ResponseEntity <> (client,HttpStatus.OK); }
 
 
     @DeleteMapping("/clients/{id}")
@@ -66,22 +73,35 @@ public class ClientController implements UrlReader {
 
     ;
 
-    public void addOrUpdate(Client client) {
-        HttpHeaders headers = new HttpHeaders ( );
-        headers.add ("Accept", MediaType.APPLICATION_JSON_VALUE);
+    public Integer addOrUpdate(Client client) {
+        Integer responseCode = null;
         try {
+            URL obj = new URL ("http://localhost:8080/clients");
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection ( );
+            con.setRequestMethod ("POST");
+            con.setRequestProperty ("Content-Type", "application/json");
+            con.setRequestProperty ("Accept", "application/json");
+            con.setRequestProperty ("User-Agent", USER_AGENT);
 
-            RestTemplate restTemplate = new RestTemplate ( );
-            ResponseEntity <Client> result
-                    = restTemplate.postForEntity ("http://localhost:8080/clients", client, Client.class);
-            System.out.println ("code of result is" + result.getStatusCode ( ));
-        } catch (Exception e) {
+            // For POST only - START
+            con.setDoOutput (true);
+            OutputStream os = con.getOutputStream ( );
+            Gson gson = new Gson ( );
+            os.write (gson.toJson (client).getBytes ( ));
+            os.flush ( );
+            os.close ( );
+            // For POST only - END
+            responseCode = checkResponse (con);
+
+        } catch (IOException e) {
             e.getMessage ( );
-            e.getLocalizedMessage ( );
+            e.printStackTrace ( );
         }
+        return responseCode;
     }
 
-    public void deleteCountry(Long id) {
+    public Integer deleteClient(Long id) {
+        Integer status = null;
         try {
             HttpClient client = HttpClients.createDefault ( );
             HttpDelete delete = new HttpDelete ("http://localhost:8080/clients/" + id);
@@ -89,10 +109,12 @@ public class ClientController implements UrlReader {
             if (response.getStatusLine ( ).getStatusCode ( ) == 202) {
                 Thread.sleep (3500);
             }
+            status = response.getStatusLine ( ).getStatusCode ( );
         } catch (Exception e) {
             e.printStackTrace ( );
         }
 
+        return status;
     }
 
     public Client getClient(Long id) {

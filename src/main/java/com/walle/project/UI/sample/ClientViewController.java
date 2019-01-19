@@ -2,25 +2,47 @@ package com.walle.project.UI.sample;
 
 import com.walle.project.UI.model.ClientTable;
 import com.walle.project.controller.ClientController;
+import com.walle.project.controller.CountryController;
+import com.walle.project.controller.TypeController;
 import com.walle.project.entity.Client;
+import com.walle.project.entity.Country;
+import com.walle.project.entity.Type;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.ComboBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.util.converter.DefaultStringConverter;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.function.Predicate;
 
-public class ClientViewController implements Initializable {
-
+public class ClientViewController implements Initializable, ShowButtonsController {
+    @FXML
+    public Button addButton;
+    @FXML
+    public Button deleteButton;
+    @FXML
+    public TextField search;
+    @FXML
+    public Button refreshButton;
     @FXML
     TableView <ClientTable> tableID;
     @FXML
@@ -28,21 +50,22 @@ public class ClientViewController implements Initializable {
     @FXML
     TableColumn <Object, String> iClient;
     @FXML
-    TableColumn <Object, Object> iPhone;
+    TableColumn <Object, String> iPhone;
     @FXML
-    TableColumn <Object, Object> iEmail;
+    TableColumn <Object, String> iEmail;
     @FXML
-    TableColumn <Object, Object> iAddress;
+    TableColumn <Object, String> iAddress;
     @FXML
-    TableColumn <Object, Object> iType;
-    @FXML
-    public Pane pnlClient;
-
-    public Integer flag = 0;
-
+    TableColumn <Object, String> iType;
+    private ObservableList <String> types;
+    private CountryController countryController = new CountryController ( );
+    private TypeController typeController = new TypeController ( );
+    private List <Type> typeList = typeController.fetchList ( );
     private ClientController clientController;
     private List <Client> clients;
     private ObservableList <ClientTable> data;
+    private Long user = LoginViewController.roleUser;
+    private ClientAddViewController clientAddViewController = new ClientAddViewController ( );
 
     public ClientViewController() {
     }
@@ -77,7 +100,8 @@ public class ClientViewController implements Initializable {
 
         data = insertData ( );
         tableID.setItems (data);
-        tableID.setEditable (true);
+        editRow ();
+
     }
 
     public Pane loadClient(AnchorPane home, Pane pnlClient) throws IOException {
@@ -88,26 +112,98 @@ public class ClientViewController implements Initializable {
         return pnlClient;
     }
 
-    public void onSelect(TableColumn.CellEditEvent<Object, Object> objectObjectCellEditEvent) {
-
-        ClientTable client =  tableID.getSelectionModel ().getSelectedItem ();
-        System.out.println (client.getrID () );
+    public void accessRefresh(ActionEvent actionEvent) {
+        tableID.getItems ( ).clear ( );
+        data.clear ( );
+        clientController = new ClientController ( );
+        try {
+            clients = clientController.fetchList ( );
+        } catch (Exception e) {
+            System.out.println (e.getMessage ( ));
+        }
+        data = insertData ( );
+        tableID.setItems (data);
     }
-//
-//    public Client onEditChange(TableColumn.CellEditEvent<Client,String> clientStringCellEditEvent){
-//        ClientTable client =  tableID.getSelectionModel ().getSelectedItem ();
-//        System.out.println (client );
-//        client.setrName ();
-//        System.out.println (client.getName () );
-////        ClientRepository clientRepository = new ClientRepository ();
-//// try {
-////     clientRepository.update (client);
-//// }
-//// catch (Exception e){
-////     e.getLocalizedMessage ();
-//// }
-//
-//        return client;
-//    }
 
+
+    public void searchProduct(KeyEvent keyEvent) {
+        FilteredList <ClientTable> filteredList = new FilteredList <> (data, e -> true);
+        search.textProperty ( ).addListener (((observable, oldValue, newValue) -> {
+            filteredList.setPredicate ((Predicate <? super ClientTable>) client -> {
+                if (newValue == null || newValue.isEmpty ( )) {
+                    return true;
+                }
+                String lowerCase = newValue.toLowerCase ( );
+                if (client.getrClient ( ).toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                } else if (client.getrPhone ( ).toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                } else if (client.getrEmail ( ).toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                } else if (client.getrAddress ( ).toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                } else if (client.getrType ( ).toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                }
+
+                return false;
+            });
+        }));
+        SortedList <ClientTable> sortedList = new SortedList <> (filteredList);
+        sortedList.comparatorProperty ( ).bind (tableID.comparatorProperty ( ));
+        tableID.setItems (sortedList);
+    }
+
+    public void addButton(ActionEvent actionEvent) {
+        try {
+            clientAddViewController.startStage ( );
+        } catch (IOException e) {
+            e.printStackTrace ( );
+            e.getMessage ( );
+        }
+    }
+
+    public void accessdelete(ActionEvent actionEvent) {
+        Long id = tableID.getSelectionModel ( ).getSelectedItem ( ).getrID ( );
+        Integer status = clientController.deleteClient (id);
+        AlertViewController.delete (status, tableID, "client");
+
+    }
+
+    private void editRow() {
+        types = FXCollections.observableArrayList ( );
+        for (int i = 0; i < typeList.size ( ); i++) {
+            types.add (typeList.get (i).getName ( ));
+        }
+        iClient.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        iPhone.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        iAddress.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        iEmail.setCellFactory (TextFieldTableCell.forTableColumn ( ));
+        iType.setCellFactory (ComboBoxTableCell.forTableColumn (new DefaultStringConverter ( ), types));
+        iType.setOnEditCommit (event -> {
+            ClientTable clientTable = tableID.getSelectionModel ( ).getSelectedItem ( );
+            clientTable.setrType (event.getNewValue ( ));
+            clientController.addOrUpdate (Mapper.transformIntoClientObject (clientTable));
+            tableID.refresh ( );
+        });
+    }
+
+
+    public void editColumn(TableColumn.CellEditEvent <Object, Object> objectObjectCellEditEvent) {
+        ClientTable clientTable = tableID.getSelectionModel ( ).getSelectedItem ( );
+        String columnName = objectObjectCellEditEvent.getTableColumn ( ).getId ( );
+        if (columnName.equals ("iClient")){
+            clientTable.setrClient (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
+        }else if (columnName.equals ("iPhone")){
+            clientTable.setrPhone (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
+        }else if (columnName.equals ("iAddress")){
+            clientTable.setrAddress (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
+        }else if (columnName.equals ("iEmail")){
+            clientTable.setrEmail (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
+        }
+
+        Client client = Mapper.transformIntoClientObject (clientTable);
+        clientController.addOrUpdate (client);
+        tableID.refresh ();
+    }
 }

@@ -82,70 +82,38 @@ public class HomeViewController implements Initializable {
 
     public void handleClicks(ActionEvent actionEvent) throws IOException {
         if (actionEvent.getSource ( ) == btnOverview) {
-
             overviewController.pnlOverview = overviewController.loadPurchase (home, pnlOverview);
             pnlOverview.toFront ( );
         }
 
         if (actionEvent.getSource ( ) == btnUser) {
-
-            if (userViewController.flag == 0) {
-                try {
-                    userViewController.pnUser = userViewController.loadUser (home, pnlUser);
-                    userViewController.flag = 1;
-                } catch (Exception e) {
-                    System.out.println (e.getMessage ( ));
-                }
-            } else pnlUser = userViewController.pnUser;
+            userViewController.loadUser (home, pnlUser);
             pnlUser.toFront ( );
         }
 
         if (actionEvent.getSource ( ) == btnClient) {
-            if (clientViewController.flag == 0) {
-                clientViewController.pnlClient = clientViewController.loadClient (home, pnlClient);
-                clientViewController.flag = 1;
-            } else pnlClient = clientViewController.pnlClient;
+            clientViewController.loadClient (home, pnlClient);
             pnlClient.toFront ( );
         }
         if (actionEvent.getSource ( ) == btnProducts) {
-
-
-            if (productViewController.flag == 0) {
-                try {
-                    productViewController.pnStaff = productViewController.loadProduct (home, pnlProducts);
-                    productViewController.flag = 1;
-                } catch (Exception e) {
-                    System.out.println (e.getMessage ( ));
-e.printStackTrace ();                }
-            } else pnlProducts = productViewController.pnStaff;
+            productViewController.loadProduct (home, pnlProducts);
             pnlProducts.toFront ( );
         }
         if (actionEvent.getSource ( ) == btnManufactures) {
-            if (manufactureViewController.flag == 0) {
-                manufactureViewController.pnManufacture = manufactureViewController.loadManufacture (home, pnlManufactures);
-                manufactureViewController.flag = 1;
-            } else pnlManufactures = manufactureViewController.pnManufacture;
+            manufactureViewController.loadManufacture (home, pnlManufactures);
             pnlManufactures.toFront ( );
         }
         if (actionEvent.getSource ( ) == btnWarehouses) {
-            if (warehouseViewController.flag == 0) {
-                warehouseViewController.pnlWarehouse = warehouseViewController.loadWarehouse (home, pnlWarehouses);
-                warehouseViewController.flag = 1;
-            } else pnlWarehouses = warehouseViewController.pnlWarehouse;
+            warehouseViewController.loadWarehouse (home, pnlWarehouses);
             pnlWarehouses.toFront ( );
         }
         if (actionEvent.getSource ( ) == btnSales) {
-            if (salesViewController.flag == 0) {
-                salesViewController.pnSales = salesViewController.loadSales (home, pnlSales);
-                salesViewController.flag = 1;
-            } else pnlSales = salesViewController.pnSales;
+            salesViewController.loadSales (home, pnlSales);
             pnlSales.toFront ( );
         }
         if (actionEvent.getSource ( ) == btnPurchases) {
-            if (purchaseViewController.flag == 0) {
-                purchaseViewController.pnlPurchase = purchaseViewController.loadPurchase (home, pnlPurchases);
-                purchaseViewController.flag = 1;
-            } else pnlPurchases = purchaseViewController.pnlPurchase;
+            purchaseViewController.loadPurchase (home, pnlPurchases);
+            purchaseViewController.flag = 1;
             pnlPurchases.toFront ( );
         }
         if (actionEvent.getSource ( ) == btnStatistics) {
@@ -176,7 +144,7 @@ e.printStackTrace ();                }
 
         try {
             user = LoginViewController.roleUser;
-            System.out.println (user );
+            System.out.println (user);
             nameSurname.setText (String.valueOf (LoginViewController.nameSurname));
             overviewController.pnlOverview = overviewController.loadPurchase (home, pnlOverview);
             pnlOverview.toFront ( );

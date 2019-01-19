@@ -42,8 +42,6 @@ public class ProductAddViewController implements Initializable {
     private TextField name;
     @FXML
     private TextField id;
-    @FXML
-    private Button saveButton;
 
     private List <String> manufactures = new ArrayList <> ( );
     private List <String> warehouses = new ArrayList <> ( );
@@ -56,9 +54,10 @@ public class ProductAddViewController implements Initializable {
     public Stage startStage() throws IOException {
         Parent root = FXMLLoader.load (getClass ( ).getClassLoader ( ).getResource ("productADD.fxml"));
         Stage stage = new Stage ( );
-        stage.setTitle ("Login");
-        stage.setScene (new Scene (root, 800, 487));
+        stage.setTitle ("Add Product");
+        stage.setScene (new Scene (root, 500, 672));
         stage.show ( );
+        stage.setResizable (false);
         return stage;
 
     }
@@ -82,6 +81,8 @@ public class ProductAddViewController implements Initializable {
         Product newProduct = new Product (id.getText ( ), name.getText ( ), qt, pr, mt, wh);
         ProductTable productTable = new ProductTable (newProduct.getId ( ), newProduct.getName ( ), newProduct.getQuantiy ( ).toString (), newProduct.getPrice ( ).toString (), newProduct.getManufacture ( ).getName ( ), newProduct.getWarehouse ( ).getName ( ));
         Integer status = productController.addOrUpdate (newProduct);
+        AlertViewController.add (status,"product");
+
 
     }
 

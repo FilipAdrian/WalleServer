@@ -44,6 +44,18 @@ public class RoleController implements UrlReader{
         return ResponseEntity.ok ( ).body ("Role has been deleted successfully.");
 
     }
+    public List <Role> fetchList() {
+        List <Role> list = null;
+        try {
+            Gson gson = new Gson ( );
+            list = new Gson ( ).fromJson (readUrl ("http://localhost:8080/role"), new TypeToken <List <Role>> ( ) {
+            }.getType ( ));
+        } catch (Exception e) {
+            e.printStackTrace ( );
+        }
+        return list;
+
+    }
 
     public Role getRole (Long id) {
         Role role = null;

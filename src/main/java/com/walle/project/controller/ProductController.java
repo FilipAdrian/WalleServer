@@ -19,12 +19,17 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
+import static org.apache.http.protocol.HTTP.USER_AGENT;
+
 @RestController
-public class ProductController implements UrlReader {
+public class ProductController implements UrlReader ,RequestResponse{
     @Autowired
     private ProductServices productServices;
 
@@ -40,17 +45,11 @@ public class ProductController implements UrlReader {
         return new ResponseEntity <> (product, HttpStatus.OK);
     }
 
-    @PostMapping("/products")
+    @PostMapping(value = "/products")
     private ResponseEntity <?> save(@RequestBody Product product) {
         productServices.saveOrUpdate (product);
-        return ResponseEntity.ok ( ).body ("Product  " + product.getName ( ) + " has been added");
-    }
+        return new ResponseEntity <> (product,HttpStatus.OK);    }
 
-    @PutMapping("/products")
-    private ResponseEntity <?> update(@RequestBody Product product) {
-        productServices.saveOrUpdate (product);
-        return ResponseEntity.ok ( ).body ("Product has been updated successfully.");
-    }
 
     @DeleteMapping("/products/{id}")
     private ResponseEntity <?> delete(@PathVariable("id") String id) {
@@ -87,21 +86,30 @@ public class ProductController implements UrlReader {
     }
 
     public Integer addOrUpdate(Product product) {
-        Integer status = new Integer (0);
-        HttpHeaders headers = new HttpHeaders ( );
-        headers.add ("Accept", MediaType.APPLICATION_JSON_VALUE);
+        Integer responseCode = null;
         try {
+            URL obj = new URL ("http://localhost:8080/products");
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection ( );
+            con.setRequestMethod ("POST");
+            con.setRequestProperty ("Content-Type", "application/json");
+            con.setRequestProperty ("Accept", "application/json");
+            con.setRequestProperty ("User-Agent", USER_AGENT);
 
-            RestTemplate restTemplate = new RestTemplate ( );
-            ResponseEntity <Product> result
-                    = restTemplate.postForEntity ("http://localhost:8080/products", product, Product.class);
-            status = result.getStatusCode ().value ();
-        } catch (Exception e) {
+            // For POST only - START
+            con.setDoOutput (true);
+            OutputStream os = con.getOutputStream ( );
+            Gson gson = new Gson ( );
+            os.write (gson.toJson (product).getBytes ( ));
+            os.flush ( );
+            os.close ( );
+            // For POST only - END
+            responseCode = checkResponse (con);
+
+        } catch (IOException e) {
             e.getMessage ( );
-            e.getLocalizedMessage ( );
+            e.printStackTrace ( );
         }
-        System.out.println (status );
-        return status;
+        return responseCode;
     }
 
     public Integer deleteProduct(String id) {

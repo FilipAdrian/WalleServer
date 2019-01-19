@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.function.Predicate;
 
-public class ManufactureViewController implements Initializable {
+public class ManufactureViewController implements Initializable, ShowButtonsController {
     @FXML
     public Button refreshButton;
     @FXML
@@ -78,20 +78,8 @@ public class ManufactureViewController implements Initializable {
 
         data = insertData ( );
         tableID.setItems (data);
-        deleteButton.setOpacity (0);
-        addButton.setOpacity (0);
-        refreshButton.setOpacity (0);
-        deleteButton.setDisable (true);
-        addButton.setDisable (true);
-        refreshButton.setDisable (true);
-
+        showButton (deleteButton, addButton, refreshButton, user);
         if (user != 91001) {
-            deleteButton.setOpacity (1);
-            addButton.setOpacity (1);
-            refreshButton.setOpacity (1);
-            deleteButton.setDisable (false);
-            addButton.setDisable (false);
-            refreshButton.setDisable (false);
             iName.setCellFactory (TextFieldTableCell.forTableColumn ( ));
             iAddress.setCellFactory (TextFieldTableCell.forTableColumn ( ));
 
@@ -117,8 +105,7 @@ public class ManufactureViewController implements Initializable {
             System.out.println ("Address");
             manufactureTable.setrAddress (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
         }
-        Mapper mapper = new Mapper ( );
-        Manufacture manufacture = mapper.transformIntoManufactureObject (manufactureTable);
+        Manufacture manufacture = Mapper.transformIntoManufactureObject (manufactureTable);
 
         manufactureController.addOrUpdate (manufacture);
         tableID.refresh ( );
@@ -130,7 +117,7 @@ public class ManufactureViewController implements Initializable {
         if (user == 91002 || user == 91003) {
             Long id = tableID.getSelectionModel ( ).getSelectedItem ( ).getrID ( );
             Integer status = manufactureController.deleteManufacture (id);
-            AlertViewController.delete (status, tableID,"manufacture");
+            AlertViewController.delete (status, tableID, "manufacture");
         }
     }
 

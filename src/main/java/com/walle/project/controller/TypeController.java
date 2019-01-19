@@ -46,7 +46,18 @@ public class TypeController implements UrlReader{
         typeService.deleteById (id);
         return ResponseEntity.ok ( ).body ("Type has been deleted successfully.");
     }
+    public List <Type> fetchList() {
+        List <Type> list = null;
+        try {
+            Gson gson = new Gson ( );
+            list = new Gson ( ).fromJson (readUrl ("http://localhost:8080/type"), new TypeToken <List <Type>> ( ) {
+            }.getType ( ));
+        } catch (Exception e) {
+            e.printStackTrace ( );
+        }
+        return list;
 
+    }
     public Type getType (Long id) {
         Type type = null;
         String url="http://localhost:8080/type/"+id;
