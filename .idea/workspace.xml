@@ -3,55 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="62f5e815-a83b-4186-9bc3-a1990f8f938f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ClientTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ClientTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/HomeViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureAddViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureAddViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/CountryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ManufactureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ManufactureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/TypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/client.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/manufactureADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/manufactureADD.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/product.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/productADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/productADD.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ClientViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ClientViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/HomeViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/HomeViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureAddViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureAddViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureViewController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductAddViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductAddViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductViewController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manufactureADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/manufactureADD.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/product.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/productADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/productADD.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -119,7 +70,7 @@
     <session id="-1649205858">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.18" value="1" />
@@ -307,7 +258,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
+                <state relative-caret-position="503">
                   <caret line="193" selection-start-line="193" selection-end-line="193" />
                 </state>
               </provider>
@@ -526,10 +477,28 @@
         <expanded-state>
           <State />
           <State>
+            <id>AOP</id>
+          </State>
+          <State>
             <id>Abstraction issuesJava</id>
           </State>
           <State>
             <id>Android</id>
+          </State>
+          <State>
+            <id>Application Servers</id>
+          </State>
+          <State>
+            <id>Assignment issuesGroovy</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bidirectional TextInternationalizationLintAndroid</id>
           </State>
           <State>
             <id>CSS</id>
@@ -538,10 +507,19 @@
             <id>Class metricsJava</id>
           </State>
           <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
             <id>Code quality toolsCSS</id>
           </State>
           <State>
             <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
           </State>
           <State>
             <id>CorrectnessLintAndroid</id>
@@ -553,13 +531,31 @@
             <id>Error handlingJava</id>
           </State>
           <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
             <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Google App Engine</id>
           </State>
           <State>
             <id>Google Web Toolkit</id>
           </State>
           <State>
             <id>Groovy</id>
+          </State>
+          <State>
+            <id>Guice</id>
+          </State>
+          <State>
+            <id>IconsUsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>InternationalizationJava</id>
+          </State>
+          <State>
+            <id>InternationalizationLintAndroid</id>
           </State>
           <State>
             <id>JSP</id>
@@ -586,6 +582,15 @@
             <id>LintAndroid</id>
           </State>
           <State>
+            <id>LoggingJava</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>MessagesCorrectnessLintAndroid</id>
+          </State>
+          <State>
             <id>Method metricsGroovy</id>
           </State>
           <State>
@@ -601,13 +606,55 @@
             <id>OSGi</id>
           </State>
           <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
             <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Redundant constructsKotlin</id>
+          </State>
+          <State>
+            <id>RegExp</id>
           </State>
           <State>
             <id>SecurityJava</id>
           </State>
           <State>
             <id>SecurityLintAndroid</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring OSGiSpring</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>UsabilityLintAndroid</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -732,7 +779,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547929186404" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547929707104" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/import.sql" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -897,12 +944,12 @@
       <workItem from="1547568143057" duration="18176000" />
       <workItem from="1547668501033" duration="21371000" />
       <workItem from="1547734634164" duration="2688000" />
-      <workItem from="1547741026936" duration="38121000" />
+      <workItem from="1547741026936" duration="38515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278601000" />
+    <option name="totallyTimeSpent" value="278995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -917,14 +964,14 @@
       <window_info id="Web" order="7" sideWeight="0.50179857" side_tool="true" weight="0.30703625" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32321042" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.335141" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.335141" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40238613" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32212582" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -1379,7 +1426,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="503">
           <caret line="193" selection-start-line="193" selection-end-line="193" />
         </state>
       </provider>
