@@ -98,7 +98,7 @@ public class PurchaseTable {
         return rProductQuantity;
     }
 
-    public String getIdClient() {
+    public String getrClient() {
         return rClient.get ( );
     }
 
@@ -106,7 +106,7 @@ public class PurchaseTable {
         return rClient;
     }
 
-    public String getrIdProduct() {
+    public String getrProduct() {
         return rIdProduct.get ( );
     }
 

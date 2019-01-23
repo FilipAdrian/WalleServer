@@ -1,9 +1,10 @@
 package com.walle.project.UI.sample;
 
 
+import com.walle.project.UI.client.Mapper;
 import com.walle.project.UI.model.ManufactureTable;
-import com.walle.project.controller.ManufactureController;
-import com.walle.project.entity.Manufacture;
+import com.walle.project.UI.client.ManufactureController;
+import com.walle.project.server.entity.Manufacture;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -18,7 +19,6 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -44,10 +44,7 @@ public class ManufactureViewController implements Initializable, ShowButtonsCont
     private Button deleteButton;
     @FXML
     private Button addButton;
-    @FXML
-    public Pane pnManufacture;
 
-    public Integer flag = 0;
     private ManufactureController manufactureController;
     private List <Manufacture> manufacture;
     private ObservableList <ManufactureTable> data;
@@ -99,10 +96,8 @@ public class ManufactureViewController implements Initializable, ShowButtonsCont
         ManufactureTable manufactureTable = tableID.getSelectionModel ( ).getSelectedItem ( );
         String columnName = objectObjectCellEditEvent.getTableColumn ( ).getId ( );
         if (columnName.equals ("iName")) {
-            System.out.println ("Name");
             manufactureTable.setrName (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
         } else {
-            System.out.println ("Address");
             manufactureTable.setrAddress (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
         }
         Manufacture manufacture = Mapper.transformIntoManufactureObject (manufactureTable);
@@ -124,7 +119,7 @@ public class ManufactureViewController implements Initializable, ShowButtonsCont
     public void addButton(ActionEvent actionEvent) throws IOException {
         System.out.println ("Access");
         try {
-            manufactureAddViewController.startStage ( );
+            manufactureAddViewController.startStage ("manufactureADD.fxml");
         } catch (Exception e) {
             e.printStackTrace ( );
         }

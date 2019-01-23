@@ -45,4 +45,12 @@ public class AlertViewController {
             alert.showAndWait ( );
         }
     }
+
+    public static void error(){
+        Alert alert = new Alert (Alert.AlertType.ERROR);
+        alert.setTitle ("Error");
+        alert.setContentText ("All fields must be completed");
+        alert.setHeaderText (null);
+        alert.showAndWait ( );
+    }
 }

@@ -1,17 +1,23 @@
 package com.walle.project.UI.sample;
 
 import com.walle.project.UI.model.PurchaseTable;
-import com.walle.project.controller.PurchaseController;
-import com.walle.project.entity.Purchase;
+import com.walle.project.UI.client.PurchaseController;
+import com.walle.project.server.entity.Purchase;
 import javafx.collections.FXCollections;
 
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
@@ -21,9 +27,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.function.Predicate;
 
 public class PurchaseViewController implements Initializable {
 
+    public Button addButton;
+    public Button deleteButton;
+    public TextField search;
+    public Button refreshButton;
     @FXML
     TableView<PurchaseTable> tableID;
     @FXML
@@ -43,13 +54,11 @@ public class PurchaseViewController implements Initializable {
     @FXML
     TableColumn <Object, Object> iAmount;
 
-    @FXML
-    public Pane pnlPurchase;
-
-    public Integer flag = 0;
     private PurchaseController purchaseController;
     private List<Purchase> purchase;
     private ObservableList<PurchaseTable> data;
+    private Integer userRole = LoginViewController.roleUser.intValue ();
+    private PurchaseAddViewController purchaseAddViewController = new PurchaseAddViewController ();
 
 
     private ObservableList <PurchaseTable> insertData() {
@@ -85,9 +94,15 @@ public class PurchaseViewController implements Initializable {
         } catch (Exception e) {
             System.out.println (e.getMessage ( ));
         }
+        if (userRole != 91003){
+            deleteButton.setDisable (true);
+            deleteButton.setOpacity (0);
+            refreshButton.setTranslateX (76);
 
+        }
         data = insertData ( );
         tableID.setItems (data);
+
     }
 
     public Pane loadPurchase(AnchorPane home, Pane pnlPurchase) throws IOException {
@@ -96,5 +111,58 @@ public class PurchaseViewController implements Initializable {
         pane.prefWidthProperty ( ).bind (home.widthProperty ( ));
         pnlPurchase.getChildren ( ).setAll (pane);
         return pnlPurchase;
+    }
+
+    public void addButton(ActionEvent actionEvent) {
+        try {
+            purchaseAddViewController.startStage ();
+        } catch (IOException e) {
+            e.printStackTrace ( );
+        }
+    }
+
+    public void accessdelete(ActionEvent actionEvent) {
+        Long id = tableID.getSelectionModel ( ).getSelectedItem ( ).getrID ( );
+        Integer status = purchaseController.deletePurchase (id);
+        AlertViewController.delete (status, tableID, "purchase");
+    }
+
+    public void accessRefresh(ActionEvent actionEvent) {
+        tableID.getItems ( ).clear ( );
+        data.clear ( );
+        purchaseController = new PurchaseController ( );
+        try {
+            purchase = purchaseController.fetchList ( );
+        } catch (Exception e) {
+            System.out.println (e.getMessage ( ));
+        }
+        data = insertData ( );
+        tableID.setItems (data);
+    }
+
+    public void searchProduct(KeyEvent keyEvent) {
+        FilteredList<PurchaseTable> filteredList = new FilteredList <> (data, e -> true);
+        search.textProperty ( ).addListener (((observable, oldValue, newValue) -> {
+            filteredList.setPredicate ((Predicate<? super PurchaseTable>) purchase -> {
+                if (newValue == null || newValue.isEmpty ( )) {
+                    return true;
+                }
+                String lowerCase = newValue.toLowerCase ( );
+                if (purchase.getrClient ().toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                } else if (purchase.getrData ().toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                } else if (purchase.getrProduct ().toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                } else if (purchase.getrUser ().toLowerCase ( ).contains (lowerCase)) {
+                    return true;
+                }
+
+                return false;
+            });
+        }));
+        SortedList<PurchaseTable> sortedList = new SortedList <> (filteredList);
+        sortedList.comparatorProperty ( ).bind (tableID.comparatorProperty ( ));
+        tableID.setItems (sortedList);
     }
 }

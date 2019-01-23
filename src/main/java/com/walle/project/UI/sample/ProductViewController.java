@@ -1,21 +1,19 @@
 package com.walle.project.UI.sample;
 
 
+import com.walle.project.UI.client.Mapper;
 import com.walle.project.UI.model.ProductTable;
-import com.walle.project.controller.ManufactureController;
-import com.walle.project.controller.ProductController;
-import com.walle.project.controller.WarehouseController;
-import com.walle.project.entity.Manufacture;
-import com.walle.project.entity.Product;
-import com.walle.project.entity.Warehouse;
-import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.value.ObservableValue;
+import com.walle.project.UI.client.ManufactureController;
+import com.walle.project.UI.client.ProductController;
+import com.walle.project.UI.client.WarehouseController;
+import com.walle.project.server.entity.Manufacture;
+import com.walle.project.server.entity.Product;
+import com.walle.project.server.entity.Warehouse;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -28,15 +26,12 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import javafx.util.Callback;
 import javafx.util.converter.DefaultStringConverter;
-import org.controlsfx.control.textfield.TextFields;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.function.Predicate;
@@ -68,7 +63,7 @@ public class ProductViewController implements Initializable, ShowButtonsControll
     private ProductAddViewController productAddViewController = new ProductAddViewController ( );
     private Long user = LoginViewController.roleUser;
     @Autowired
-    private com.walle.project.controller.ProductController productController;
+    private ProductController productController;
     private List <Product> products;
     private ObservableList <ProductTable> data;
     private ManufactureController manufactureController = new ManufactureController ( );
@@ -97,7 +92,7 @@ public class ProductViewController implements Initializable, ShowButtonsControll
         iManufacture.setCellValueFactory (new PropertyValueFactory <> ("rManufacture"));
         iWarehouse.setCellValueFactory (new PropertyValueFactory <> ("rWarehouse"));
 
-        productController = new com.walle.project.controller.ProductController ( );
+        productController = new ProductController ( );
         try {
             products = productController.fetchList ( );
         } catch (Exception e) {

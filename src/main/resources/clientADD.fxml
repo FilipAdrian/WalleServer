@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -32,43 +32,43 @@
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="name" alignment="CENTER" prefHeight="5.0" prefWidth="50.0" />
+                  <JFXTextField fx:id="name" unFocusColor="#b9b5b5" />
                   <Label text="Surname">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="surname" alignment="CENTER" />
+                  <JFXTextField fx:id="surname" unFocusColor="#b9b5b5" />
                   <Label text="Phone">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="phone" alignment="CENTER" />
+                  <JFXTextField fx:id="phone" unFocusColor="#b9b5b5" />
                   <Label text="E-mail">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="email" alignment="CENTER" />
-                  <Label prefHeight="21.0" prefWidth="70.0" text="Country">
+                  <JFXTextField fx:id="email" unFocusColor="#b9b5b5" />
+                  <Label fx:id="countryLabel" prefHeight="21.0" prefWidth="70.0" text="Country">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="country" alignment="CENTER" />
-                  <Label prefHeight="24.0" prefWidth="71.0" text="Address">
+                  <JFXTextField fx:id="country" unFocusColor="#b9b5b5" />
+                  <Label fx:id="addressLabel" prefHeight="24.0" prefWidth="71.0" text="Address">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="address" alignment="CENTER" />
-                  <Label text="Type">
+                  <JFXTextField fx:id="address" unFocusColor="#b9b5b5" />
+                  <Label fx:id="typeLabel" text="Type">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="type" alignment="CENTER" />
+                  <JFXTextField fx:id="type" unFocusColor="#b9b5b5" />
 
                </children>
                <BorderPane.margin>
@@ -80,7 +80,7 @@
             </VBox>
          </center>
          <bottom>
-            <Button onAction="#onClick" mnemonicParsing="false" prefHeight="64.0" prefWidth="60.0" style="-fx-background-color: #d2eff9;" textFill="#06ee0d" BorderPane.alignment="CENTER">
+            <Button mnemonicParsing="false" onAction="#onClick" prefHeight="64.0" prefWidth="60.0" style="-fx-background-color: #d2eff9;" textFill="#06ee0d" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets bottom="40.0" />
                </BorderPane.margin>

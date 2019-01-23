@@ -10,25 +10,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="pnlOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-            minWidth="-Infinity" prefHeight="672.0" prefWidth="1056.0" style="-fx-background-color: #d2eff9;"
-            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.OverviewController">
+<AnchorPane fx:id="pnlOverview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1056.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.OverviewController">
    <children>
-      <BorderPane prefHeight="242.0" prefWidth="994.0" style="-fx-background-color: #d2eff9;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0">
+      <BorderPane prefHeight="242.0" prefWidth="994.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0">
          <top>
-            <Label text="Welcome" textFill="WHITE" BorderPane.alignment="CENTER">
+            <Label text="Welcome" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Arial Bold" size="60.0" />
                </font>
             </Label>
          </top>
          <bottom>
-            <Label fx:id="user" text=" " textFill="WHITE" BorderPane.alignment="CENTER">
+            <Label fx:id="user" text=" " BorderPane.alignment="CENTER">
                <font>
                   <Font name="Berlin Sans FB" size="40.0" />
                </font>
                <graphic>
-                  <Label fx:id="access" text=" " textFill="WHITE">
+                  <Label fx:id="access" text=" ">
                      <font>
                         <Font name="Arial Bold" size="40.0" />
                      </font>
@@ -37,7 +35,7 @@
             </Label>
          </bottom>
          <center>
-            <StackPane prefHeight="516.0" prefWidth="753.0" style="-fx-background-color: #d2eff9;" BorderPane.alignment="CENTER">
+            <StackPane prefHeight="516.0" prefWidth="753.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
                <padding>
                   <Insets bottom="30.0" left="20.0" right="20.0" top="20.0" />
                </padding>

@@ -1,12 +1,11 @@
 package com.walle.project.UI.sample;
 
+import com.walle.project.UI.client.Mapper;
 import com.walle.project.UI.model.ClientTable;
-import com.walle.project.controller.ClientController;
-import com.walle.project.controller.CountryController;
-import com.walle.project.controller.TypeController;
-import com.walle.project.entity.Client;
-import com.walle.project.entity.Country;
-import com.walle.project.entity.Type;
+import com.walle.project.UI.client.ClientController;
+import com.walle.project.UI.client.TypeController;
+import com.walle.project.server.entity.Client;
+import com.walle.project.server.entity.Type;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -29,7 +28,6 @@ import javafx.util.converter.DefaultStringConverter;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.function.Predicate;
@@ -58,14 +56,13 @@ public class ClientViewController implements Initializable, ShowButtonsControlle
     @FXML
     TableColumn <Object, String> iType;
     private ObservableList <String> types;
-    private CountryController countryController = new CountryController ( );
     private TypeController typeController = new TypeController ( );
     private List <Type> typeList = typeController.fetchList ( );
     private ClientController clientController;
     private List <Client> clients;
     private ObservableList <ClientTable> data;
-    private Long user = LoginViewController.roleUser;
     private ClientAddViewController clientAddViewController = new ClientAddViewController ( );
+    private Integer userRole = LoginViewController.roleUser.intValue ( );
 
     public ClientViewController() {
     }
@@ -97,10 +94,21 @@ public class ClientViewController implements Initializable, ShowButtonsControlle
         } catch (Exception e) {
             System.out.println (e.getMessage ( ));
         }
+        if (userRole == 91001) {
+            deleteButton.setDisable (true);
+            deleteButton.setOpacity (0);
+            refreshButton.setTranslateX (76);
 
+        }
+        if (userRole == 91001) {
+            deleteButton.setDisable (true);
+            deleteButton.setOpacity (0);
+            refreshButton.setTranslateX (76);
+
+        }
         data = insertData ( );
         tableID.setItems (data);
-        editRow ();
+        editRow ( );
 
     }
 
@@ -192,18 +200,18 @@ public class ClientViewController implements Initializable, ShowButtonsControlle
     public void editColumn(TableColumn.CellEditEvent <Object, Object> objectObjectCellEditEvent) {
         ClientTable clientTable = tableID.getSelectionModel ( ).getSelectedItem ( );
         String columnName = objectObjectCellEditEvent.getTableColumn ( ).getId ( );
-        if (columnName.equals ("iClient")){
+        if (columnName.equals ("iClient")) {
             clientTable.setrClient (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
-        }else if (columnName.equals ("iPhone")){
+        } else if (columnName.equals ("iPhone")) {
             clientTable.setrPhone (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
-        }else if (columnName.equals ("iAddress")){
+        } else if (columnName.equals ("iAddress")) {
             clientTable.setrAddress (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
-        }else if (columnName.equals ("iEmail")){
+        } else if (columnName.equals ("iEmail")) {
             clientTable.setrEmail (objectObjectCellEditEvent.getNewValue ( ).toString ( ));
         }
 
         Client client = Mapper.transformIntoClientObject (clientTable);
         clientController.addOrUpdate (client);
-        tableID.refresh ();
+        tableID.refresh ( );
     }
 }

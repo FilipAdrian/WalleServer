@@ -1,20 +1,16 @@
 package com.walle.project.UI.sample;
 
-import com.walle.project.UI.model.ManufactureTable;
-import com.walle.project.controller.CountryController;
-import com.walle.project.controller.ManufactureController;
-import com.walle.project.entity.Country;
-import com.walle.project.entity.Manufacture;
-import javafx.collections.ObservableList;
+import com.jfoenix.controls.JFXTextField;
+import com.walle.project.UI.client.CountryController;
+import com.walle.project.UI.client.ManufactureController;
+import com.walle.project.server.entity.Country;
+import com.walle.project.server.entity.Manufacture;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.controlsfx.control.textfield.TextFields;
 
@@ -24,22 +20,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ManufactureAddViewController implements Initializable {
+public class ManufactureAddViewController implements Initializable,ShowButtonsController {
     @FXML
-    public TextField address;
+    public JFXTextField address;
     @FXML
-    public TextField country;
+    public JFXTextField country;
     @FXML
-    public TextField name;
+    public JFXTextField name;
 
-    private List <String> nameOfCountry = new ArrayList <> ( );
-    private CountryController countryController = new CountryController ( );
+    public List <String> nameOfCountry = new ArrayList <> ( );
+    public CountryController countryController = new CountryController ( );
     private ManufactureController manufactureController = new ManufactureController ( );
-    private List <Country> countryList = countryController.fetchList ( );
+    public List <Country> countryList = countryController.fetchList ( );
 
 
-    public Stage startStage() throws IOException {
-        Parent root = FXMLLoader.load (getClass ( ).getClassLoader ( ).getResource ("manufactureADD.fxml"));
+    public Stage startStage(String stageName) throws IOException {
+        Parent root = FXMLLoader.load (getClass ( ).getClassLoader ( ).getResource (stageName));
         Stage stage = new Stage ( );
         stage.setTitle ("Add Manufacture");
         stage.setScene (new Scene (root, 500, 487));
@@ -66,9 +62,24 @@ public class ManufactureAddViewController implements Initializable {
                 countrySelected = countryList.get (i);
             }
         }
-        Manufacture manufacture = new Manufacture (name.getText ( ), countrySelected, address.getText ( ));
+        JFXTextField[] textFields = {name, address, country};
+        Integer status = null;
+        Boolean fieldComplet = true;
+        for (JFXTextField field : textFields) {
+            if (field.getText ( ).isEmpty ( ) || field.getText ( ) == null) {
+                fieldComplet = false;
+                AlertViewController.error ( );
+                break;
+            }
+        }
+        if (fieldComplet) {
+            Manufacture manufacture = new Manufacture (name.getText ( ), countrySelected, address.getText ( ));
+            status = manufactureController.addOrUpdate (manufacture);
+            AlertViewController.add (status, "manufacture");
+            cleanField (textFields);
 
-        Integer status = manufactureController.addOrUpdate (manufacture);
-        AlertViewController.add (status,"manufacture");
+
+        }
+        cleanField (textFields);
     }
 }

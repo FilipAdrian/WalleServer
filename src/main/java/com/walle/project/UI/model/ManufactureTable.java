@@ -1,7 +1,5 @@
 package com.walle.project.UI.model;
 
-import com.walle.project.entity.Manufacture;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 

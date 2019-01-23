@@ -1,47 +1,40 @@
 package com.walle.project.UI.sample;
 
-import com.walle.project.UI.model.ProductTable;
-import com.walle.project.controller.CountryController;
-import com.walle.project.controller.ManufactureController;
-import com.walle.project.controller.ProductController;
-import com.walle.project.controller.WarehouseController;
-import com.walle.project.entity.Country;
-import com.walle.project.entity.Manufacture;
-import com.walle.project.entity.Product;
-import com.walle.project.entity.Warehouse;
+import com.jfoenix.controls.JFXTextField;
+import com.walle.project.UI.client.ManufactureController;
+import com.walle.project.UI.client.ProductController;
+import com.walle.project.UI.client.WarehouseController;
+import com.walle.project.server.entity.Manufacture;
+import com.walle.project.server.entity.Product;
+import com.walle.project.server.entity.Warehouse;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.controlsfx.control.textfield.TextFields;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ProductAddViewController implements Initializable {
+public class ProductAddViewController implements Initializable,ShowButtonsController{
     @FXML
-    private TextField quantity;
+    private JFXTextField quantity;
     @FXML
-    private TextField price;
+    private JFXTextField price;
     @FXML
-    private TextField warehouse;
+    private JFXTextField warehouse;
     @FXML
-    private TextField manufacturer;
+    private JFXTextField manufacturer;
     @FXML
-    private TextField name;
+    private JFXTextField name;
     @FXML
-    private TextField id;
+    private JFXTextField id;
 
     private List <String> manufactures = new ArrayList <> ( );
     private List <String> warehouses = new ArrayList <> ( );
@@ -76,12 +69,26 @@ public class ProductAddViewController implements Initializable {
                 mt = manufactureList.get (i);
             }
         }
-        Integer qt = Integer.parseInt (quantity.getText ( ));
-        Double pr = Double.parseDouble (price.getText ( ));
-        Product newProduct = new Product (id.getText ( ), name.getText ( ), qt, pr, mt, wh);
-        ProductTable productTable = new ProductTable (newProduct.getId ( ), newProduct.getName ( ), newProduct.getQuantiy ( ).toString (), newProduct.getPrice ( ).toString (), newProduct.getManufacture ( ).getName ( ), newProduct.getWarehouse ( ).getName ( ));
-        Integer status = productController.addOrUpdate (newProduct);
-        AlertViewController.add (status,"product");
+
+        Integer status = null;
+        Boolean fieldComplet = true;
+        JFXTextField[] textFields = {name, price, manufacturer, warehouse, quantity};
+
+        for (JFXTextField field : textFields) {
+            if (field.getText ( ).isEmpty ( ) || field.getText ( ) == null) {
+                fieldComplet = false;
+                AlertViewController.error ( );
+                break;
+            }
+        }
+        if (fieldComplet) {
+            Integer qt = Integer.parseInt (quantity.getText ( ));
+            Double pr = Double.parseDouble (price.getText ( ));
+            Product newProduct = new Product (id.getText ( ), name.getText ( ), qt, pr, mt, wh);
+            status = productController.addOrUpdate (newProduct);
+            AlertViewController.add (status,"product");
+            cleanField (textFields);
+        }
 
 
     }

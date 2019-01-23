@@ -1,5 +1,6 @@
 package com.walle.project.UI.sample;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 
@@ -19,6 +20,12 @@ public interface ShowButtonsController {
             refreshButton.setDisable (false);
             addButton.setDisable (false);
 
+        }
+    }
+
+    default void cleanField(JFXTextField [] textFields ){
+        for (JFXTextField field: textFields) {
+            field.clear ();
         }
     }
 }
