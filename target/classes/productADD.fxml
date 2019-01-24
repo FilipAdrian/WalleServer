@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="500.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.ProductAddViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="500.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.interfaces.ProductAddViewController">
     <children>
         <BorderPane prefHeight="622.0" prefWidth="568.0" style="-fx-background-color: #d2eff9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -32,37 +32,37 @@
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="id" prefHeight="5.0" prefWidth="50.0" />
+                  <JFXTextField fx:id="id" unFocusColor="#b9b5b5" />
                   <Label prefHeight="32.0" prefWidth="59.0" text="Name">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="name" prefHeight="5.0" prefWidth="50.0" />
+                  <JFXTextField fx:id="name" unFocusColor="#b9b5b5" />
                   <Label prefHeight="32.0" prefWidth="73.0" text="Price">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="price" />
+                  <JFXTextField fx:id="price" unFocusColor="#b9b5b5" />
                   <Label prefHeight="32.0" prefWidth="98.0" text="Quantity">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="quantity" />
+                  <JFXTextField fx:id="quantity" unFocusColor="#b9b5b5" />
                   <Label prefHeight="32.0" prefWidth="118.0" text="Manufacturer ">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="manufacturer" />
+                  <JFXTextField fx:id="manufacturer" unFocusColor="#b9b5b5" />
                   <Label prefHeight="32.0" prefWidth="98.0" text="Warehouse">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="warehouse" />
+                  <JFXTextField fx:id="warehouse" unFocusColor="#b9b5b5" />
 
                </children>
                <BorderPane.margin>

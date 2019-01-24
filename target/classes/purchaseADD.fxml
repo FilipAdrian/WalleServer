@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1061.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.interfaces.PurchaseAddViewController">
+   <children>
+      <Label layoutX="153.0" layoutY="28.0" prefHeight="85.0" prefWidth="223.0" text="Purchase">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="71.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="client" focusColor="#464b5b" layoutX="180.0" layoutY="205.0" prefHeight="40.0" prefWidth="232.0" promptText="Client" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="data" layoutX="180.0" layoutY="311.0" prefHeight="44.0" prefWidth="263.0" promptText="Data" />
+      <JFXTextField fx:id="product" focusColor="#464b5b" layoutX="646.0" layoutY="208.0" prefHeight="40.0" prefWidth="232.0" promptText="ID Product" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="quantity" focusColor="#464b5b" layoutX="648.0" layoutY="313.0" prefHeight="40.0" prefWidth="232.0" promptText="Quantity" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="amount" focusColor="#464b5b" layoutX="648.0" layoutY="425.0" prefHeight="40.0" prefWidth="232.0" promptText="Amount" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="cost" focusColor="#464b5b" layoutX="178.0" layoutY="425.0" prefHeight="40.0" prefWidth="232.0" promptText="Cost" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="481.0" layoutY="522.0" mnemonicParsing="false" onAction="#onClick" prefHeight="64.0" prefWidth="60.0" style="-fx-background-color: #d2eff9;" textFill="#06ee0d">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="72.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="addButtonClick" layoutX="410.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addButtonClick" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #d2eff9;">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/add_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

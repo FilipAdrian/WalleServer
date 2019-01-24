@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="statistic" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1850.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.interfaces.StatisticViewController">
+    <children>
+      <Label layoutX="60.0" layoutY="26.0" text="Statistics on the year : " textAlignment="CENTER" AnchorPane.topAnchor="26.0">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Text fx:id="textYear" layoutX="394.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Bodoni MT" size="35.0" />
+         </font>
+      </Text>
+        <StackPane layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="788.0" style="-fx-background-color:#d2eff9;" stylesheets="@style.css" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="69.0">
+            <padding>
+                <Insets bottom="30.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+         <children>
+            <AreaChart fx:id="perYear" prefHeight="475.0" prefWidth="748.0">
+              <xAxis>
+                <CategoryAxis fx:id="month" prefHeight="40.0" prefWidth="938.0">
+                     <tickLabelFont>
+                        <Font name="Book Antiqua" size="13.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="money" label="Money" side="LEFT" />
+              </yAxis>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </AreaChart>
+         </children>
+        </StackPane>
+      <Button fx:id="next" layoutX="691.0" layoutY="17.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="56.0" prefWidth="64.0" style="-fx-background-color: #d2eff9;" AnchorPane.rightAnchor="268.0">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/next.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <JFXTextField fx:id="year" alignment="CENTER" layoutX="119.0" layoutY="519.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="152.0" promptText="Select year" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="119.0" />
+      <Text layoutX="64.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="63.69970703125">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="399.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income :" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="399.0">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="income" layoutX="501.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="169.69971179962158" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="500.0">
+         <font>
+            <Font name="Bodoni MT" size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="show" layoutX="278.0" layoutY="519.0" mnemonicParsing="false" text="Show" textFill="#101110" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="278.0" />
+    </children>
+</AnchorPane>

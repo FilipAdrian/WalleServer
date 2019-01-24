@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="500.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.ManufactureAddViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="500.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.interfaces.ManufactureAddViewController">
     <children>
         <BorderPane layoutX="69.0" layoutY="14.0" prefHeight="622.0" prefWidth="798.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -29,19 +29,19 @@
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="name" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <JFXTextField fx:id="name" unFocusColor="#b9b5b5" />
                   <Label prefHeight="42.0" prefWidth="70.0" text="Country">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="country" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <JFXTextField fx:id="country" unFocusColor="#b9b5b5" />
                   <Label prefHeight="42.0" prefWidth="67.0" text="Address">
                      <font>
                         <Font name="Bell MT" size="20.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="address" alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" />
+                  <JFXTextField fx:id="address" unFocusColor="#b9b5b5" />
                </children>
                <BorderPane.margin>
                   <Insets />

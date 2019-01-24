@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.geometry.Insets?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0"
-            prefWidth="1056.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/10.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.WarehouseViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1056.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.interfaces.WarehouseViewController">
     <children>
-        <StackPane layoutX="5.0" layoutY="-7.0" maxHeight="-Infinity" maxWidth="-Infinity"
-                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1056.0"
-                   style="-fx-background-color:#d2eff9;" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0"
-                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <StackPane layoutX="5.0" layoutY="-7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="1056.0" style="-fx-background-color:#d2eff9;" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <padding>
                 <Insets bottom="30.0" left="20.0" right="20.0" top="20.0" />
             </padding>
         </StackPane>
-        <BorderPane prefHeight="242.0" prefWidth="994.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="200.0">
+        <BorderPane prefHeight="242.0" prefWidth="994.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="20.0">
             <center>
                 <TableView fx:id="tableID" fixedCellSize="25.0" prefHeight="242.0" prefWidth="835.0" BorderPane.alignment="CENTER">
                     <columnResizePolicy>
@@ -27,12 +30,78 @@
                     </columnResizePolicy>
                     <columns>
                         <TableColumn fx:id="iID" prefWidth="186.0" text="Nr." />
-                        <TableColumn fx:id="iName" prefWidth="218.0" text="Name" />
-                        <TableColumn fx:id="iAddress" prefWidth="80.0" text="Address" />
-                        <TableColumn fx:id="iPhone" prefWidth="80.0" text="Phone" />
+                        <TableColumn fx:id="iName" onEditCommit="#oneSelect" prefWidth="218.0" text="Name" />
+                        <TableColumn fx:id="iAddress"  onEditCommit="#oneSelect" prefWidth="80.0" text="Address" />
+                        <TableColumn fx:id="iPhone" onEditCommit="#oneSelect" prefWidth="80.0" text="Phone" />
                     </columns>
+               <BorderPane.margin>
+                  <Insets top="50.0" />
+               </BorderPane.margin>
                 </TableView>
             </center>
+         <top>
+            <GridPane prefHeight="73.0" prefWidth="767.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="78.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="124.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="201.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButton" prefHeight="72.0">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#accessdelete" prefHeight="72.0" translateX="76.0">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="search" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#searchProduct" prefHeight="36.0" prefWidth="166.0" promptText="Search Item" translateY="-10.0" GridPane.columnIndex="5">
+                     <GridPane.margin>
+                        <Insets right="50.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <ImageView fitHeight="35.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" translateX="165.0" translateY="-10.0" GridPane.columnIndex="5">
+                     <image>
+                        <Image url="@images/search.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#accessRefresh" prefHeight="72.0" translateX="148.0">
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" scaleX="1.25" scaleY="1.25" translateX="2.0">
+                           <image>
+                              <Image url="@images/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </top>
         </BorderPane>
     </children>
 </AnchorPane>

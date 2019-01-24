@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="stUser" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1650.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.interfaces.StatisticUserViewController">
+   <children>
+      <Button fx:id="previous"   layoutX="891.0" layoutY="10.0" mnemonicParsing="false" onAction="#getPrevious" prefHeight="56.0" prefWidth="64.0" style="-fx-background-color: #d2eff9;" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="16.0">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="next"  layoutX="691.0" layoutY="17.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="64.0" style="-fx-background-color: #d2eff9;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="16.0">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/next.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="60.0" layoutY="26.0" text="Statistics Based On Users " textAlignment="CENTER" AnchorPane.topAnchor="26.0">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <StackPane layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="788.0" style="-fx-background-color:#d2eff9;" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+         <padding>
+            <Insets bottom="30.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <BarChart fx:id="chartUser" prefHeight="513.0" prefWidth="748.0">
+              <xAxis>
+                <CategoryAxis fx:id="user" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="activity" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

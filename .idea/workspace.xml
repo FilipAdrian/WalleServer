@@ -1,7 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62f5e815-a83b-4186-9bc3-a1990f8f938f" name="Default Changelist" comment="" />
+    <list default="true" id="62f5e815-a83b-4186-9bc3-a1990f8f938f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_7_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/RequestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Home.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2B.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2Bicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2Bicon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/LogOut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Sales.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/businessman_863430.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Box_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_GPS_Antenna_64px_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Home_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Meanpath_64px_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Open_Envelope_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Person_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Search_52px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Sign_Out_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Slider__32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Xbox_Menu_32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/manufact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/products.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/purch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/staff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/statist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/warehouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/manufacture.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/product.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WalleServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WalleServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/ProjectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ManufactureTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ManufactureTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/PurchaseTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/PurchaseTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/AlertViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/AlertViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientAddViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientAddViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/HomeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/HomeViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/LoginViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/LoginViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureAddViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureAddViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/PurchaseViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/PurchaseViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/SalesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/SalesViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ShowButtonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ShowButtonsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/UserViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/UserViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/WarehouseViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/WarehouseViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/CountryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ManufactureController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/PurchaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/RequestResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/SalesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/TypeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/UrlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/UrlReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/controller/WarehouseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Manufacture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Purchase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Sales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Warehouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/CountryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/ManufactureRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/PurchaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/SalesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/TypeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/repository/WarehouseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/ClientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/ClientServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/CountryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/CountryServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/ManufactureServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/ManufactureServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/ProductServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/PurchaseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/PurchaseServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/RoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/RoleServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/SalesServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/SalesServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/TypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/TypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/UserServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/UserServicesImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/WarehouseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/walle/project/services/WarehouseServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/clientADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/clientADD.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/2B.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/2B.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/manufactureADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/manufactureADD.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/productADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/productADD.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/purchase.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/purchase.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sales.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sales.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/user.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/user.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/warehouse.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/warehouse.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/clientADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/clientADD.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/model/PurchaseTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/model/PurchaseTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/AlertViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/AlertViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ClientAddViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ClientAddViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ClientViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ClientViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/HomeViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/HomeViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/LoginViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/LoginViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureAddViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureAddViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ManufactureViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/Mapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductAddViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductAddViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ProductViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/PurchaseViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/PurchaseViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/SalesViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/SalesViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ShowButtonsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/ShowButtonsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/UserViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/UserViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/WarehouseViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/UI/sample/WarehouseViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/CountryController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/CountryController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/CountryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/CountryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ManufactureController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/PurchaseController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/PurchaseController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/PurchaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RequestResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/SalesController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/SalesController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/SalesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/SalesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/TypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/UrlReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/UserController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/UserController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/UserController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/WarehouseController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/WarehouseController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/controller/WarehouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/controller/WarehouseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/entity/Sales.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/repository/PurchaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/repository/PurchaseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/repository/SalesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/repository/SalesRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/services/PurchaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/services/PurchaseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/services/PurchaseServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/services/PurchaseServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/services/SalesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/services/SalesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/walle/project/services/SalesServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/walle/project/services/SalesServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/2B.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/2B.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/manufactureADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/manufactureADD.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/productADD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/productADD.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/purchase.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/purchase.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sales.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sales.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/user.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/user.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/warehouse.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/warehouse.fxml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,85 +315,98 @@
     <session id="-1649205858">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.closed" value="25" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.19" value="4" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.270" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Client" value="3" />
+          <entry key="Country" value="1" />
           <entry key="PurchaseTable" value="1" />
           <entry key="app_user" value="1" />
-          <entry key="class" value="18" />
+          <entry key="class" value="24" />
           <entry key="client" value="9" />
-          <entry key="cmd" value="1" />
+          <entry key="cmd" value="2" />
+          <entry key="controller" value="1" />
           <entry key="country" value="14" />
-          <entry key="css" value="1" />
-          <entry key="fxml" value="70" />
+          <entry key="css" value="3" />
+          <entry key="fxml" value="111" />
           <entry key="gitignore" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="595" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="848" />
           <entry key="manufacture" value="12" />
           <entry key="mvnw" value="1" />
+          <entry key="png" value="1" />
           <entry key="product" value="11" />
-          <entry key="properties" value="9" />
-          <entry key="purchase" value="4" />
+          <entry key="project" value="1" />
+          <entry key="properties" value="10" />
+          <entry key="purchase" value="6" />
           <entry key="role" value="3" />
-          <entry key="sales" value="3" />
+          <entry key="sales" value="10" />
           <entry key="sql" value="4" />
           <entry key="type" value="4" />
-          <entry key="users" value="13" />
+          <entry key="users" value="25" />
           <entry key="warehouse" value="2" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="18" />
-          <entry key="CSS" value="1" />
-          <entry key="Database Element" value="76" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="595" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="9" />
+          <entry key="CLASS" value="24" />
+          <entry key="CSS" value="3" />
+          <entry key="Database Element" value="97" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="848" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Properties" value="10" />
           <entry key="SQL" value="3" />
           <entry key="Scratch" value="1" />
-          <entry key="UML" value="1" />
-          <entry key="XML" value="76" />
+          <entry key="UML" value="7" />
+          <entry key="XML" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="18" />
-          <entry key="dummy" value="7" />
-          <entry key="fxml" value="457" />
-          <entry key="java" value="32142" />
+          <entry key="cell" value="40" />
+          <entry key="css" value="91" />
+          <entry key="dummy" value="14" />
+          <entry key="fxml" value="610" />
+          <entry key="java" value="48065" />
           <entry key="properties" value="2" />
           <entry key="sql" value="6" />
           <entry key="txt" value="7" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="32142" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="CSS" value="91" />
+          <entry key="JAVA" value="48065" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Properties" value="2" />
           <entry key="SQL" value="6" />
-          <entry key="Scratch" value="18" />
-          <entry key="XML" value="461" />
+          <entry key="Scratch" value="40" />
+          <entry key="XML" value="619" />
         </counts>
       </usages-collector>
     </session>
@@ -155,178 +415,112 @@
     <favorites_list name="WalleServer" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5964778">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1360">
-                  <caret line="118" selection-start-line="118" selection-end-line="118" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/productADD.fxml">
-              <provider editor-type-id="JavaFX-Scene-Builder" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1292">
-                  <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/HomeViewController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="318">
-                  <caret line="151" selection-start-line="151" selection-end-line="151" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/product.fxml">
-              <provider editor-type-id="JavaFX-Scene-Builder" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/client.fxml">
-              <provider editor-type-id="JavaFX-Scene-Builder" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
-                  <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="935">
-                  <caret line="82" selection-start-line="82" selection-end-line="82" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Mapper.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1258">
-                  <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1326">
-                  <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="93" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/clientADD.fxml">
-              <provider editor-type-id="JavaFX-Scene-Builder" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1394">
-                  <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="503">
-                  <caret line="193" selection-start-line="193" selection-end-line="193" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/RequestResponse.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/ProductController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/ManufactureController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="48" selection-start-line="48" selection-end-line="48" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="14" column="95" selection-start-line="14" selection-start-column="95" selection-end-line="14" selection-end-column="95" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/WarehouseAddViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/WarehouseViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/entity/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-424">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/entity/Country.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/ProjectApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/LunchUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/SalesViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/StatisticUserViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/StatisticProductViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/SalesAddViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Date</find>
-      <find>rIdClient</find>
-      <find>cost</find>
-      <find>Cost</find>
-      <find>rPrice</find>
-      <find>rUser</find>
       <find>rCost</find>
       <find>SimpleDoubleProperty</find>
       <find>Price</find>
@@ -351,6 +545,12 @@
       <find>resp</find>
       <find>type</find>
       <find>accessre</find>
+      <find>show</find>
+      <find>showbut</find>
+      <find>login</find>
+      <find>emailva</find>
+      <find>save</find>
+      <find>next</find>
     </findStrings>
     <replaceStrings>
       <replace>cost</replace>
@@ -386,57 +586,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/SalesViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/CrudOperation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/UrlReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/WarehouseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/SalesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/PurchaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/ProjectApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/some.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/manufacture.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/EditCell.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ManufactureTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/OverviewController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/overview.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/Login.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Search.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Home.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/LoginViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/productADD.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/manufactureADD .fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/manufactureADD.fxml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/AlertViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ProductTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/RefreshButtonController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureAddViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ShowButtonsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/clientADD.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/TypeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/RoleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ManufactureController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ClientController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientAddViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/CountryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/entity/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ClientTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/product.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/RequestResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/stTopProduct.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/StatisticProductViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/client.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/stOnUser.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/overview.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/settings.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/HomeViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/CountryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ManufactureController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/ManufactureController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/PurchaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/PurchaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/CountryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/RoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/SalesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/TypeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/TypeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/controller/WarehouseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/SalesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/WarehouseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientAddViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/LoginViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureAddViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/PurchaseAddViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/PurchaseViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/SaettingViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/SalesAddViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/SalesViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/StatisticUserViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/StatisticViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/UserAddViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/UserViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/WarehouseAddViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/WarehouseViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/server/entity/Country.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/walle/project/UI/LunchUI.java" />
       </list>
     </option>
   </component>
@@ -464,7 +664,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -671,7 +871,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -712,45 +911,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WalleServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WalleServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WalleServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WalleServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WalleServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WalleServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WalleServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WalleServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WalleServer" type="b2602c69:ProjectViewProjectNode" />
@@ -764,6 +925,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -777,15 +939,15 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547929707104" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548288706390" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/import.sql" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -800,6 +962,7 @@
       <recent name="C:\Users\Adrian\IdeaProjects\WalleServer\src\main\java\com\walle\project\ui" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.walle.project.UI.client" />
       <recent name="com.walle.project.UI.sample" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -822,13 +985,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.walle.project.UI.sample.Main" />
+  <component name="RunManager">
+    <configuration name="LunchUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.walle.project.UI.LunchUI" />
       <module name="WalleServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.walle.project.UI.sample.*" />
+          <option name="PATTERN" value="com.walle.project.UI.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -836,12 +999,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.walle.project.controller.Main" />
       <module name="WalleServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.walle.project.controller.*" />
+          <option name="PATTERN" value="com.walle.project.UI.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -854,7 +1017,7 @@
       <module name="WalleServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.walle.project.controller.*" />
+          <option name="PATTERN" value="com.walle.project.UI.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -867,7 +1030,7 @@
       <module name="WalleServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.walle.project.controller.*" />
+          <option name="PATTERN" value="com.walle.project.UI.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -876,11 +1039,11 @@
       </method>
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.walle.project.UI.sample.test" />
+      <option name="MAIN_CLASS_NAME" value="com.walle.project.UI.interfaces.test" />
       <module name="WalleServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.walle.project.UI.sample.*" />
+          <option name="PATTERN" value="com.walle.project.UI.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -890,26 +1053,24 @@
     </configuration>
     <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="WalleServer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walle.project.ProjectApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.walle.project.server.ProjectApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ProjectApplication" />
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.LunchUI" />
       <item itemvalue="Application.some" />
       <item itemvalue="Application.main" />
       <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.LunchUI" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.some" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -943,17 +1104,27 @@
       <workItem from="1547668501033" duration="21371000" />
       <workItem from="1547734634164" duration="2688000" />
       <workItem from="1547741026936" duration="38515000" />
-      <workItem from="1547929989258" duration="233000" />
+      <workItem from="1547929989258" duration="611000" />
+      <workItem from="1547930835866" duration="14952000" />
+      <workItem from="1547983056785" duration="31182000" />
+      <workItem from="1548069770839" duration="20563000" />
+      <workItem from="1548096042071" duration="21816000" />
+      <workItem from="1548120065103" duration="180000" />
+      <workItem from="1548152575572" duration="35072000" />
+      <workItem from="1548228226196" duration="27836000" />
+      <workItem from="1548270914643" duration="622000" />
+      <workItem from="1548274953006" duration="8046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278995000" />
+    <option name="totallyTimeSpent" value="439875000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49820143" visible="true" weight="0.30383795" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49820143" visible="true" weight="0.57877463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -963,16 +1134,16 @@
       <window_info id="Web" order="7" sideWeight="0.50179857" side_tool="true" weight="0.30703625" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32321042" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.335141" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40238613" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29067245" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2559653" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33296824" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32212582" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.318872" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -982,32 +1153,32 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.67697227" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18710022" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3683369" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49820143" weight="0.30383795" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49820143" weight="0.13326226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="4" side_tool="true" weight="0.32995737" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.50179857" side_tool="true" weight="0.30743983" />
+      <window_info id="Web" order="7" sideWeight="0.50179857" side_tool="true" weight="0.30703625" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32321042" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.335141" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40238613" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29392624" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2559653" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32212582" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.318872" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -1017,7 +1188,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.67697227" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18710022" />
+      <window_info anchor="right" id="Database" order="6" weight="0.46827134" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -1034,364 +1205,472 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://99b1bbe9-ba3d-488b-b5dc-36232c5c6d3b/database/Company/schema/public/table/role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/cell/TextFieldTableCell.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/controller/SalesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="78" column="83" selection-start-line="78" selection-start-column="83" selection-end-line="78" selection-end-column="83" />
+        <state relative-caret-position="1360">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/LoginViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/controller/TypeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="46" column="13" selection-start-line="46" selection-end-line="47" />
+        <state relative-caret-position="490">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/productADD.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/product.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/manufactureADD.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        <state relative-caret-position="473">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/services/UserServices.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://99b1bbe9-ba3d-488b-b5dc-36232c5c6d3b/database/Company/schema/public/table/manufacture">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/entity/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://99b1bbe9-ba3d-488b-b5dc-36232c5c6d3b/database/Company/schema/public/table/country">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/UrlReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/control/cell/PropertyValueFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="112" column="11" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
-          <folding>
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4223#4224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ProductTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/ProjectApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/RefreshButtonController.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://99b1bbe9-ba3d-488b-b5dc-36232c5c6d3b/database/Company/schema/public/table/product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ShowButtonsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="91" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
+        <state relative-caret-position="-697">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/TypeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/CountryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="-706">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/RoleController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/EmailSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/OverviewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/SalesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/WarehouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-502">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/TypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/PurchaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/EmailValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/ManufactureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1385">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1088">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/RequestResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/tables/PurchaseTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/AlertViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/ClientAddViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/ClientViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/HomeViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="124" column="80" selection-start-line="124" selection-start-column="80" selection-end-line="124" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/LoginViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/ManufactureAddViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-944">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/ManufactureViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/OverviewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/test.java" />
-    <entry file="das://99b1bbe9-ba3d-488b-b5dc-36232c5c6d3b/database/Company/schema/public/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/ProductAddViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/client/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/ProductViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/PurchaseAddViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/PurchaseViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/SaettingViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.walle.project.controller">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <ID>JAVA</ID>
+          <OriginalElement>com.walle.project.controller</OriginalElement>
+          <nodes>
+            <node x="" y="">com.walle.project.controller.ClientController</node>
+            <node x="" y="">com.walle.project.controller.SalesController</node>
+            <node x="" y="">com.walle.project.controller.RoleController</node>
+            <node x="" y="">com.walle.project.controller.CountryController</node>
+            <node x="" y="">com.walle.project.controller.ProductController</node>
+            <node x="" y="">com.walle.project.controller.UserController</node>
+            <node x="" y="">com.walle.project.controller.PurchaseController</node>
+            <node x="" y="">com.walle.project.controller.ManufactureController</node>
+            <node x="" y="">com.walle.project.controller.WarehouseController</node>
+            <node x="" y="">com.walle.project.controller.CustomDateTimeDeserialize</node>
+            <node x="" y="">com.walle.project.controller.TypeController</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="205.0" y="200.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="das://99b1bbe9-ba3d-488b-b5dc-36232c5c6d3b/database/Company/schema/public/table/type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+    <entry file="uml://JAVA/com.walle.project">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <ID>JAVA</ID>
+          <OriginalElement>com.walle.project</OriginalElement>
+          <nodes>
+            <node x="" y="">com.walle.project.controller</node>
+            <node x="" y="">com.walle.project.repository</node>
+            <node x="" y="">com.walle.project.ProjectApplicationTests</node>
+            <node x="" y="">com.walle.project.entity</node>
+            <node x="" y="">com.walle.project.services</node>
+            <node x="" y="">com.walle.project.ProjectApplication</node>
+            <node x="" y="">com.walle.project.UI</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="154.0" y="163.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/entity/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/StatisticViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureAddViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/UserAddViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="71" column="55" selection-start-line="71" selection-end-line="72" />
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/AlertViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/UserViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/WarehouseAddViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/SalesViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/StatisticUserViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/StatisticProductViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/SalesAddViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/interfaces/WarehouseViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/entity/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-424">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.walle.project.entity.Client">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.walle.project.entity.Client</OriginalElement>
+          <nodes>
+            <node x="" y="">javax.persistence.Entity</node>
+            <node x="" y="">com.walle.project.entity.Purchase</node>
+            <node x="" y="">com.walle.project.entity.Manufacture</node>
+            <node x="" y="">com.walle.project.entity.Sales</node>
+            <node x="" y="">com.walle.project.entity.Role</node>
+            <node x="" y="">com.walle.project.entity.Client</node>
+            <node x="" y="">com.walle.project.entity.Warehouse</node>
+            <node x="" y="">com.walle.project.entity.Product</node>
+            <node x="" y="">com.walle.project.entity.Users</node>
+            <node x="" y="">com.walle.project.entity.Type</node>
+            <node x="" y="">com.walle.project.entity.Country</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7918181818181819" x="356.5" y="568.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Methods</Category>
+            <Category>Fields</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.walle.project.entity.Country">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.walle.project.entity.Country</OriginalElement>
+          <nodes>
+            <node x="" y="">javax.persistence.Entity</node>
+            <node x="" y="">com.walle.project.entity.Country</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="310.0" y="54.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/entity/Country.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/server/ProjectApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientAddViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/LunchUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="42" selection-start-line="42" selection-end-line="47" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="93" column="36" lean-forward="true" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/CountryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/model/ClientTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/manufacture.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1191">
-          <caret line="88" column="87" selection-start-line="88" selection-start-column="87" selection-end-line="88" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5151">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/productADD.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/product.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ProductAddViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ManufactureViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/clientADD.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/ClientViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/RequestResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/controller/ManufactureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="95" selection-start-line="14" selection-start-column="95" selection-end-line="14" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/client.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walle/project/UI/sample/HomeViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="85">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
