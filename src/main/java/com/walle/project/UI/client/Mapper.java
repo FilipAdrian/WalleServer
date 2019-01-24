@@ -1,6 +1,6 @@
 package com.walle.project.UI.client;
 
-import com.walle.project.UI.model.*;
+import com.walle.project.UI.tables.*;
 import com.walle.project.server.entity.*;
 
 import java.util.*;

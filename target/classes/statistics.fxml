@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="statistic" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1850.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.sample.StatisticViewController">
+<AnchorPane fx:id="statistic" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1850.0" style="-fx-background-color: #d2eff9;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.walle.project.UI.interfaces.StatisticViewController">
     <children>
       <Label layoutX="60.0" layoutY="26.0" text="Statistics on the year : " textAlignment="CENTER" AnchorPane.topAnchor="26.0">
          <font>
